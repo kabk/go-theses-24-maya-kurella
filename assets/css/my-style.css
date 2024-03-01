@@ -1,0 +1,677 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /* height:100% */
+  background-color: rgb(227, 239, 235);
+  /* margin: 20%; */
+}
+
+/* main {
+  margin: 3rem 10rem;
+  background-color: blue;
+} */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 45rem 1fr 3rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 7px;
+  height: 100vh;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 7;
+}
+
+
+.left-side, .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.left-side {
+  grid-area: 2 / 1 / 3 / 2;
+  z-index: 1;
+  /* mix-blend-mode: saturation; */
+  isolation: isolate;
+  position: relative; /* Allows for absolute positioning within */
+}
+
+
+
+
+
+.image-inside{
+  position:absolute;
+  display:block;
+  width:calc(15vw - 10px - 10px);
+  margin-left:calc(35px - 20vw + 10px);
+  margin-top: calc(20px - 20vw + 10px);
+  height:auto;
+}
+
+.image-inside-option2{
+  position:absolute;
+  display:block;
+  width:calc(15vw - 10px - 10px);
+  margin-left:calc(35px - 20vw + 10px);
+  height:auto;
+}
+
+.image-inside-option3{
+  position:absolute;
+  display:block;
+  width:calc(15vw - 10px - 10px);
+  margin-left:calc(35px - 20vw + 10px);
+  margin-top: calc(20px - 12vw + 10px);
+  height:auto;
+}
+
+.image-wrapper:nth-child(1) .image-inside {
+  left: calc(10%); /* Adjust this value for the first image */
+}
+
+.image-wrapper:nth-child(2) .image-inside {
+  left: calc(20%); /* Adjust this value for the second image */
+}
+
+.footnote-inside{
+  position:absolute;
+  display:block;
+  width:calc(20vw - 30px);
+  margin-left:calc(60vw + 10px);
+  margin-top:-1.75rem;
+  height:auto;
+  text-indent: 0;
+}
+
+.footnote-inside-option2{
+  position:absolute;
+  display:block;
+  width:calc(20vw - 30px);
+  margin-left:calc(60vw + 10px);
+  margin-top:3rem;
+  height:auto;
+  text-indent: 0;
+}
+
+.middle {
+  grid-area: 2 / 2 / 3 / 5;
+  z-index: 3;
+  text-align: justify;
+}
+
+.right-side {
+  grid-area: 2 / 5 / 3 / 7;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2; /* Lower than middle column */
+  /* mix-blend-mode: saturation; */
+  isolation: isolate;
+  position: relative;
+  text-align: center;
+}
+
+.right-side-text {
+  font-family: "Comic Sans MS";
+  font-size: 1rem;
+  text-align: left;
+  scroll-margin-top: 1rem;
+}
+
+#right-side-text-info {
+  font-family: "Eskapade";
+}
+
+.footer {
+  grid-area: 3 / 1 / 4 / 7;
+}
+
+.left-side,
+.right-side {
+  background-color: rgb(227, 239, 235);
+  /* mix-blend-mode: saturation; */
+}
+
+.left-side,
+.right-side img {
+  background-color: rgb(227, 239, 235);
+  /* mix-blend-mode: color-burn; */
+}
+
+/* moving image */
+
+.cucumber {
+  display: block;
+  position: absolute;
+  width: 40rem;
+  mix-blend-mode: hard-light;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "MalaTestaCK";
+  /* padding-bottom: 2rem; */
+  padding-top: 2rem;
+}
+
+/* .title:hover {
+  font-size: 5rem;
+  font-family: "MalaTestaCK";
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+} */
+
+.ephemeral-strikethrough {
+  position: absolute;
+  top: 50%; /* Adjust to vertically center */
+  left: 50%; /* Adjust to horizontally center */
+  transform: translate(-50%, -50%); /* Center the image */
+  max-width: 100%; /* Control the size of the image, adjust as needed */
+  max-height: 100%; /* Control the size of the image, adjust as needed */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
+  filter: blur(0px); /* Start without blur */
+  object-fit: contain; /* Ensure the image isn't stretched */
+}
+
+.title-container {
+  position: relative;
+}
+
+.title-container:hover .ephemeral-strikethrough {
+  opacity: 1;
+  visibility: visible;
+  filter: blur(5px); /* Apply blur on hover if desired */
+  transition-delay: 0s;
+}
+
+.blur-on-hover {
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+/* Hover state: blur specific words */
+.research-question-container:hover .blur-on-hover {
+  filter: blur(4px); /* Adjust the blur radius as needed */
+}
+
+.hover-text-research-question {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+
+#chapter-1 {
+  scroll-margin-top: 2rem;
+}
+
+#chapter-2 {
+  scroll-margin-top: 2rem;
+}
+
+#chapter-3 {
+  scroll-margin-top: 2rem;
+}
+
+#chapter-1-hover {
+  top: 45%;
+  right: 23%; 
+  color: whitesmoke;
+  background-color: black;
+  font-family: "Comic Sans MS";
+
+  /* border-radius: 43% 57% 70% 30% / 55% 44% 56% 45%; */
+}
+
+#chapter-2-hover {
+  bottom: 4%;
+  right: 31%; /* Adjust as needed */
+  color: whitesmoke;
+  background-color: black;
+  font-family: "Comic Sans MS";
+}
+
+#chapter-3-hover {
+  top: 26%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  transform: translateX(-50%);
+  color: whitesmoke;
+  background-color: black;
+  font-family: "Comic Sans MS";
+}
+
+.research-question-container:hover .hover-text-research-question {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.author-name {
+  text-align: center;
+  font-family: "Comic Sans MS";
+  padding-top: 3rem;
+}
+
+/* .author-name:hover {
+  text-align: center;
+  font-family: "MalaTestaCK";
+  padding-top: 5rem;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+} */
+
+h2 {
+  font-size: 2rem;
+  font-family: "eskapade", serif;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: underline;
+  padding-top: 5rem;
+}
+
+h2.research-question {
+  margin: 0 20%;
+  text-align: center;
+  padding-top: 0rem;
+  font-family: "eskapade", serif;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.section-titles {
+  font-weight: 300;
+  text-decoration-line: underline;
+}
+
+.research-question-container {
+  position: relative;
+}
+
+
+
+#abstract {
+  padding-top: 0rem;
+}
+
+/* figure{
+    size: 10em;
+    align-items: center;
+} */
+
+/* .karl-marx{
+    width: "100%";
+    height:auto;
+} */
+
+figcaption {
+  color: lightgray;
+}
+
+blockquote {
+  margin: 1rem 25%;
+}
+
+#note1 {
+  color: brown;
+  scroll-margin-top: 50vh;
+}
+
+/* .non-productivity {
+    display: inline;
+    color: pink;
+} */
+
+/* .clouds {
+    mix-blend-mode: overlay;
+    display: block;
+    position: fixed;
+} */
+
+/* .img.clouds {
+    mix-blend-mode: overlay;
+    display: block;
+    position: absolute;
+} */
+
+.clouds {
+  display: block;
+  position: absolute;
+  mix-blend-mode: exclusion;
+  animation-play-state: paused;
+  animation: slide-left-and-back 300s forwards;
+}
+.clouds:hover {
+  display: none;
+  position: absolute;
+  mix-blend-mode: exclusion;
+  animation-play-state: running;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: "eskapade", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* z-index: 0; */
+}
+
+/* Apply text indent only to the first paragraph of each section */
+section > p:first-of-type {
+  text-indent: 3rem;
+}
+
+/* If you still want to apply specific styles to paragraphs inside main */
+main > p {
+  text-indent: 0rem;
+  /* Other styles if needed */
+}
+
+/* div:first-letter {
+    padding: 2px 5px;
+    background: #174D95;
+    font-family: Arial;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 2px;
+} */
+
+.sidenote-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#im-maya-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#nonsense-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#envelopes-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#thoughts-and-feelings-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#billy-longclaws-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#beautiful-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#bunny-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#zubazuba-sleeptalk{
+  scroll-margin-top: 1.5rem;
+}
+.image-wrapper {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden; /* Prevents the enlarged image from overflowing */
+  position: relative; /* For positioning the image absolutely within the wrapper */
+}
+
+.footnote-ref img {
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  transform-origin: center; /* Ensures scaling is centered */
+}
+
+.footnote-ref:hover img {
+  transform: scale(3.3); /* Adjust the scale factor as needed */
+  mix-blend-mode: darken;
+}
+
+/* .opposite-scroll {
+  width: 90%; 
+  display: block; 
+  margin-bottom: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* this is for smaller sizes */
+
+@media (max-width: 600px) {
+  /* .grid-container {
+    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  } */
+
+  .parent {
+    display: grid;
+    grid-template-columns: 0.5rem 1fr 0.5rem;
+    grid-template-rows: 35rem 1fr 3rem;
+    grid-column-gap: 10px;
+    grid-row-gap: 7px;
+    height: 100vh;
+  }
+
+  .image-inside{
+    position: relative;
+    display: block;
+    width: 100vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .image-inside-option2{
+    position: relative;
+    display: block;
+    width: 100vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+  
+  .header {
+    grid-area: 1 / 1 / 2 / 7;
+  }
+
+  h2.research-question {
+    margin: 0 10%;
+    text-align: center;
+    padding-top: 0rem;
+    font-family: "eskapade", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+.left-side, .right-side {
+    order: 2; /* Moves these items below the middle item */
+}
+.middle {
+    order: 1; /* Ensures this content is at the top */
+}
+
+.title {
+  order: 1;
+  font-size: 4rem;
+  padding-top: 0.2rem;
+}
+
+.research-question {
+  order: 1;
+  font-size: 1.4rem;
+  font-family: "Comic Sans MS";
+}
+
+.author-name {
+  order: 1;
+  font-size: 0.7rem;
+}
+
+.section-titles {
+  font-weight: 300;
+  text-decoration-line: underline;
+  font-size: 2rem;
+}
+
+.left-side {
+  grid-area: 2 / 1 / 3 / 2;
+  z-index: 1;
+  isolation: isolate;
+  position: relative; /* Allows for absolute positioning within */
+}
+
+.middle {
+  grid-area: 2 / 2 / 3 / 5;
+  z-index: 3;
+  text-align: justify;
+}
+
+.right-side {
+  grid-area: 2 / 5 / 3 / 7;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2; /* Lower than middle column */
+  /* mix-blend-mode: saturation; */
+  isolation: isolate;
+  position: relative;
+  text-align: center;
+}
+
+.h2{
+  padding-top: 1rem;
+}
+
+.cucumber {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  mix-blend-mode: hard-light;
+  z-index: 3;
+}
+
+  p {
+    font-size: 1rem; /* Smaller font size for paragraphs */
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .footnote-ref img.image-footnotes {
+    width: 0.5rem; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle;
+  }
+
+  .image-wrapper {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    overflow: hidden; /* Prevents the enlarged image from overflowing */
+    position: relative; /* For positioning the image absolutely within the wrapper */
+  }
+
+  .footnote-ref img {
+    width: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    transform-origin: center; /* Ensures scaling is centered */
+  }
+
+  .footnote-ref:hover img {
+    transform: scale(2.2); /* Adjust the scale factor as needed */
+    mix-blend-mode: darken;
+  }
+
+  .footnote-inside {
+    position: relative; /* Adjusted to maintain document flow */
+    width: 70vw;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .footnote-inside-option2{
+    position: relative; /* Adjusted to maintain document flow */
+    width: 70vw;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+}
+
+.billy-longclaws-image {
+  position: fixed;
+}
+
+.audio-button {
+  background-color: #090c10;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10rem;
+  font-family: "MalaTestaCK";
+  font-size: 1rem;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
+  filter: blur(5px);
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevents the text from wrapping */
+  /* Ensure the button has enough width */
+  min-width: 5rem;
+}
+
+.audio-button:hover {
+  background-color: #090c10;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10rem;
+  font-family: "MalaTestaCK";
+  font-size: 1rem;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
+  filter: blur(0px);
+}

@@ -1,157 +1,1250 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-	<head>
+    <!-- meta tags, fill them with website meta infos -->
+    <meta name="description" content="Description of your web page" />
+    <meta
+      name="keywords"
+      content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..."
+    />
+    <meta
+      name="author"
+      content="Name of the author/owner of the webpage's content"
+    />
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- favicon, fill with a 512x512px .png image named 'favicon.png' -->
+    <link rel="icon" href="assets/images/favicon/favicon1.png" />
 
-		<!-- meta tags, fill them with website meta infos -->
-		<meta name="description" content="Description of your web page" /> 
-		<meta name="keywords" content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..."/> 
-		<meta name="author" content="Name of the author/owner of the webpage's content" />
+    <!-- website title, visible in the browser window and on link sharing -->
+    <title>Thesis on Sleeptalking</title>
 
-		<!-- favicon, fill with a 512x512px .png image named 'favicon.png' -->
-		<link rel="icon" href="assets/images/favicon/favicon.png"/>
+    <!-- links for extensions and dependencies -->
 
-		<!-- website title, visible in the browser window and on link sharing -->
-		<title>Website title</title>
+    <!-- css -->
+    <!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- you stylesheet -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css?ver=1.0"> -->
+    <link rel="stylesheet" href="assets/css/my-style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hch1qxu.css" />
 
-		<!-- links for extensions and dependencies -->
+    <!-- js -->
+    <!-- first link your javascript dependencies, here as an example is Jquery -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- your function scripts -->
+    <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+  </head>
 
-		<!-- css -->
-		<!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
-		<link rel="stylesheet" href="assets/css/normalize.css">
-		<!-- you stylesheet -->
-		<!-- <link rel="stylesheet" href="assets/css/style.css?ver=1.0"> -->
-		<link rel="stylesheet" href="assets/css/my-style.css"> 
+  <body>
+    <!-- <div class="page-wrapper"> -->
+    <div class="parent">
+      <div class="header">
+        <div class="title-container">
+          <h1 class="title">Talking in Your Sleep <br /></h1>
+          <img
+            class="ephemeral-strikethrough"
+            src="assets/images/drawn-drawings/strikethrough.png"
+            alt="Drawn Strikethrough"
+          />
+        </div>
+        <div class="research-question-container">
+          <h2 class="research-question">
+            <span class="blur-on-hover"
+              >How can recording sleep talk enable us to </span
+            >access ephemeral narratives
+            <span class="blur-on-hover">intertwined across the </span> past,
+            present and future,
+            <span class="blur-on-hover">
+              thus facilitating the creation of a </span
+            >visual language through drawing?
+          </h2>
+          <a
+            href="#chapter-1"
+            class="hover-text-research-question"
+            id="chapter-1-hover"
+            >Chapter 1</a
+          >
+          <a
+            href="#chapter-2"
+            class="hover-text-research-question"
+            id="chapter-2-hover"
+            >Chapter 2</a
+          >
+          <a
+            href="#chapter-3"
+            class="hover-text-research-question"
+            id="chapter-3-hover"
+            >Chapter 3</a
+          >
+        </div>
+        <h3 class="author-name">
+          KABK Graphic Design Bachelor Thesis 2024 by Maya Kurella
+        </h3>
+      </div>
 
-		<!-- js -->
-		<!-- first link your javascript dependencies, here as an example is Jquery -->
-		<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-		<!-- your function scripts -->
-		<script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
-	    
-	</head>
+      <div class="left-side">
+        <div class="left-side-content">
+          <!-- <h1>Images</h1>
+			  <h2>This side includes images from my thesis...</h2> -->
+          <!-- <img
+            src="assets/images/main images/billy-longclaws.png"
+            class="opposite-scroll"
+            alt="Billy Longclaws"
+            id="billy-longclaws-image"
+          />
+          <img
+            src="assets/images/main images/mirtha-dermisache-notebook.jpeg"
+            class="opposite-scroll"
+            alt="Mirtha Dermisache notebook"
+            id="mirtha-notebook-image"
+          />
+          <img
+            src="assets/images/main images/childhood-sketchbook.jpg"
+            class="opposite-scroll"
+            alt="My childhood sketchbook"
+            id="childhood-image"
+          />
+          <img
+            src="assets/images/main images/mirtha-dermisache-bw.jpeg"
+            class="opposite-scroll"
+            alt="Mirtha Dermisache"
+            id="mirtha-bw-image"
+          />
+          <img
+            src="assets/images/main images/visual-essay.png"
+            class="opposite-scroll"
+            alt="My visual essay"
+            id="visual-essay-image"
+          />
+          <img
+            src="assets/images/main images/kiki-bouba.png"
+            class="opposite-scroll"
+            alt="Kiki and Bouba"
+            id="kiki-image"
+          />
+          <img
+            src="assets/images/main images/fellini.png"
+            class="opposite-scroll"
+            alt="Federico Fellini"
+            id="fellini-image"
+          />
+          <img
+            src="assets/images/main images/jim-shaw.png"
+            class="opposite-scroll"
+            alt="Jim Shaw"
+            id="jim-shaw-image"
+          />
+          <img
+            src="assets/images/main images/zubazuba.png"
+            class="opposite-scroll"
+            alt="@mayasleeptalks Instagram"
+            id="zubazuba-image"
+          />
+          <img
+            src="assets/images/main images/sophie-calle.png"
+            class="opposite-scroll"
+            alt="Sophie Calle"
+            id="sophie-calle-image"
+          /> -->
+        </div>
+      </div>
+      <div class="middle">
+        <section id="section-1" class="section">
+          <h2 class="section-titles" id="abstract">Abstract</h2>
 
-	<body>
+          <p>
+            Sleep talk is an area of research that remains largely neglected —
+            slept upon — due to the seeming unimportance of the topic. It looks
+            like there is no urgency for research, after all, it is perceived as
+            nonsensical babble, simply a by-product of dreaming. With my
+            research, I highlight and speculate upon the possibilities that are
+            opened up through recording, documenting, transcribing and sharing
+            sleep talk, which would challenge the predominant perception of this
+            topic and potentially open up new lines of research relevant in both
+            scientific and artistic perspectives.
+          </p>
 
-		<!-- webpage content goes here -->
+          <p>
+            I present sleep talk in a new light: one of turning non-productivity
+            into productivity, giving sleep talk the platform and importance
+            that it deserves. I will bring this to light by combining examples
+            of artists (Sophie Calle, Mirtha Dermisache, Jim Shaw, Federico
+            Fellini), psychological references (‘Why We Sleep’ by Matthew
+            Walker, ‘The Reinterpretation of Dreams: An Evolutionary Hypothesis
+            of the Function of Dreaming’ by Antti Revonsuo, ‘Synaesthesia—A
+            Window Into Perception, Thought and Language’ by V. S.
+            Ramachandran and Edward Hubbard and ‘The Hill Cognitive-Experiential
+            Model of Dream Interpretation’ by Clara E. Hill and Aaron B.
+            Rochlen) along with my own experiences, interpretations and arsenal
+            of sleep talk snippets, recorded over the past four years, much of
+            which I have shared on @mayasleeptalks on Instagram. This was the
+            starting point for my Visual Essay exploration, where I decode the
+            transcript of the night using childhood drawings and other ephemera.
+            In doing so, I create a foundation for a visual language that aims
+            to connect the past, present and future, observing recurring themes.
+          </p>
 
-		<div class="page-wrapper">
+          <p>
+            Through this framework, I uncover how recollecting experiences,
+            synthesising events from the past, present and future, and employing
+            the method of ‘double-archiving’ can be helpful tools, especially in
+            creating a visual language through drawing. How moving from the
+            individual to the wider collective, along with the act of dream
+            transcription in itself, are tools for capturing interesting
+            narratives, and making these narratives accessible to a wider
+            audience. Expressing narratives through drawing adds the element of
+            materiality that these otherwise ephemeral narratives require,
+            especially to be understood and listened to by others.
+          </p>
+        </section>
 
-			<header>
+        <section id="section-2" class="section">
+          <h2 class="section-titles" id="intro">Introduction</h2>
 
-				<h1> Hello World!</h1>
-				<p class="author-name">A <strong>document</strong> by <em>me</em></p>
+          <p>
+            When I fall asleep, I am able to explore ideas, feelings and
+            experiences that I have witnessed throughout my life<sup
+              ><a href="#im-maya-sleeptalk" class="sidenote-link"
+                >🤸01:46</a
+              ></sup
+            >
+            <span
+              id="im-maya-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <span style="font-family: 'Eskapade'"
+                >🤸‍♀️01:46 <br />
+                <br
+              /></span>
+              Well I'm just, I'm looking! I'm Maya.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Thursday 24th December, 2020.
+              </span>
+            </span>
+            — all in the comfort of my own bed. It’s a time of day, or rather
+            night, dedicated specifically to processing and unravelling, finding
+            patterns, dwelling upon and pondering. A safe-space for limitlessly
+            weaving narratives together, joining fragments of ideas and visions
+            — for storytelling. Logic and plausibility play no role here. While
+            dreaming, I explore narratives that I never would have been able to
+            reach in a conscious state. Unfortunately, our dreamt-up ideas are
+            unreachable, ephemeral, once the morning glow wakes us up. We know
+            there is something special amongst these ideas, but they are too
+            magical, too confusing to put into words. Into something our
+            consciousness can understand. What if we could put those ideas into
+            words? Well, I do, and that is through sleep talk.
+          </p>
 
+          <p>
+            Over the past four years, I have recorded many nights of my own
+            sleep talk. The act of recording forever preserves the precious
+            ideas that would otherwise seem unfathomably hard to describe. I
+            have hundreds of snippets of the ideas that splurge out of my mouth,
+            be it nonsense<sup
+              ><a href="#nonsense-sleeptalk" class="sidenote-link"
+                >🦞03:42</a
+              ></sup
+            >,
 
-			</header>
+            <span
+              id="nonsense-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <span style="font-family: 'Eskapade'"
+                >🦞03:42 <br />
+                <br
+              /></span>
+              Yeah I’m… slowy. Slowy hehe. I just slowed everything by the way
+              and yeah. Slowy. Slowy. But also not slowy. You know what I
+              mean?<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday 6th February, 2024.
+              </span>
+            </span>
 
-			<main>
-				<figure>
-					<img src= https://images.e-flux-systems.com/001_WEB.jpg,1920 alt="karl-marx" width="100%" height="auto"> 
-					<figcaption>
-						<p>Rangea, Karl Marx with Swartpuntia, and Ernietta.&nbsp;Jonas Staal,&nbsp;<em>94 Million Years of Collectivism&nbsp;</em>(detail of&nbsp;storyboard study),<em>&nbsp;</em>2020–21.&nbsp;Gouache on paper. Courtesy of the artist.&nbsp;</p>
-					</figcaption>
-				</figure>
+            or recounts of recent events. Recently, a friend and I were scouring
+            the city trying to find standard envelopes (Gengler). We couldn’t
+            find the correct envelopes anywhere and the extensive search efforts
+            gave me a headache. After returning home and indulging in a night of
+            sleep, I woke up, vaguely remembering a dream about envelopes. I
+            opened Prime Sleep Recorder, the app I use to record my sleep talk,
+            and listened to what I had chatted about that night, as I do every
+            morning. Funnily enough, I was so concerned about the envelopes, I
+            had even talked about them at precisely 04:31
+            <sup
+              ><a href="#envelopes-sleeptalk" class="sidenote-link"
+                >💌04:31</a
+              ></sup
+            >.
 
+            <span
+              id="envelopes-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <span style="font-family: 'Eskapade'">💌04:31 </span> <br />
+              <br />
+              Fine. Nein. See in that envelope bottom? In the right. Or in the
+              lower… in the lower right? On the lower left. Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info">Tuesday 9th January, 2024. </span>
+            </span>
+          </p>
 
-				<h2 id="intro">Intro</h2>
+          <p>
+            Sharing narratives harvested by recording sleep talk, encourages a
+            culture of vulnerability, and I will explore this further by looking
+            at Jim Shaw’s ‘Dreams’, and Federico Fellini’s ‘The Book of Dreams’,
+            who both use drawing as a tool of expression to share narratives
+            with others, challenging the idea of dreams being a personal,
+            non-shareable entity (Fellini, 7). Often when I sleep talk, it
+            sounds like I am having a one-sided conversation. It feels like
+            there is a desire to connect. As Kae Tempest says, to activate a
+            piece, you need to be able to share it, but also to have someone to
+            listen (49). This applies not only in the realm of speech and sound,
+            but also in the context of graphic design. This is how you elevate
+            an idea into something much more, into something that connects.
+          </p>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus nulla, rutrum eget malesuada sit amet, gravida in nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ligula felis, consectetur ut mi eu, egestas interdum augue. Aliquam a ipsum lectus. Pellentesque a vulputate ligula, id malesuada quam. Cras eleifend in leo vitae pellentesque. Duis ac vehicula sem, ut blandit leo. Mauris vulputate dapibus velit tincidunt varius. Duis euismod diam tellus, eget dictum ante suscipit quis. Nunc sed est ipsum. Nunc luctus augue id sapien blandit fermentum. Aenean eget ipsum lacinia mi eleifend luctus at a arcu.
-				</p>
+          <p>
+            Although not everybody sleep talks, this thesis aims to open a
+            discussion — how to channel our subconscious ideas into material
+            that can be used for narrative-creation, for communication, for
+            connection. This is what design is all about. For me, it may be
+            creating an archive of audio recordings, transcripts that are
+            generated as I’m dreaming. For others, this may be dream journaling,
+            dream interpretation, or at the very least the willingness to
+            acknowledge the power the subconscious has in terms of idea
+            generation, pattern finding and creativity. Furthermore, future
+            technologies like MRI scanning (in a more affordable, less intrusive
+            form) may start becoming available to artists. This would open up
+            opportunities for the creation of a harmonious visual language,
+            bridging interpretations of brain images during sleep with visual
+            interpretations of sleep talk.
+          </p>
 
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta, malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros nec turpis.
-				</p>
+          <!-- <img class="clouds" src="assets/images/Clouds-1.png" alt="clouds"> -->
+        </section>
 
-				<h2 id="chapter-1">Chapter 1</h2>
+        <section id="section-3" class="section">
+          <h2 class="section-titles" id="chapter-1">
+            Chapter 1: Dreaming is connecting, sleep talking is transcribing
+          </h2>
 
-				<p>
-					Sed volutpat mauris at tempus cursus. Aenean finibus eros nibh, vel consequat velit porta ut. In faucibus ante sed mattis efficitur. Duis semper scelerisque sollicitudin. Vestibulum faucibus, nisl at venenatis posuere, nisi felis congue mauris, eget auctor mi nulla nec tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sapien metus, blandit vehicula purus quis, vehicula cursus erat. Donec non cursus neque.
-				</p>
+          <p class="i-am-a-collection">
+            I am a collection of every experience I have ever encountered,
+            everything I have ever witnessed. All of it has left a mark on me. A
+            certain feeling associated with every little thing. Wafts of
+            homesickness in the air transport me back ten years. To a place I
+            will never go again, yet it is locked away in my memory. The taste
+            of my grandmother’s home-cooked meals (Holovenko). A hug from a
+            friend that sends a familiar feeling down my spine – my kindergarten
+            teacher (Podd)? No. I can’t quite place it. Everything I have ever
+            collected is not just a part of me, but fragments of all those I
+            have come into contact with. While asleep everything swirls,
+            connects, creates constellations of information<sup
+              ><a href="#thoughts-and-feelings-sleeptalk" class="sidenote-link"
+                >🌌02:10</a
+              ></sup
+            >.
 
-				<details>
+            <span
+              id="thoughts-and-feelings-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <span style="font-family: 'Eskapade'">🌌02:10 </span> <br />
+              <br />A bit… hiss… a bit all over the place, just writing my
+              thoughts and… feelings! <br />
+              <br />
+              <span id="right-side-text-info"
+                >Monday 18th December, 2023.
+              </span>
+            </span>
+          </p>
 
-					<summary>
-						<h3 id="intro">Sub-content, example of an accordion</h2>
-					</summary>
+          <p>
+            I revel in the warmth and comfort of my bed. The lingering comfort,
+            even after the night’s experiences are over. The warm blanket of
+            inter-tangled nonsense trying to straighten itself out, ready to
+            brace the day, the real world. Remaining under this blanket,
+            overloaded, overwhelmed, feels like bliss. This feeling of the night
+            as a safe space is no illusion. In fact, dreaming serves a purpose:
+            “overnight therapy” (Walker 204-207). The hormone noradrenaline
+            allows us to process painful memories of the past during the night,
+            using NREM (Non-Rapid Eye Movement sleep phase) to store individual
+            memories in long-term storage, and REM sleep (the Rapid Eye Movement
+            phase) to observe patterns and create connections that were
+            previously unseen. This is the way we learn a new language. The
+            special way that the brain can find connections, scanning for rules
+            and coming to conclusions is something unique to sleep.
+          </p>
 
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus nulla, rutrum eget malesuada sit amet, gravida in nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ligula felis, consectetur ut mi eu, egestas interdum augue. Aliquam a ipsum lectus. Pellentesque a vulputate ligula, id malesuada quam. Cras eleifend in leo vitae pellentesque. Duis ac vehicula sem, ut blandit leo. Mauris vulputate dapibus velit tincidunt varius. Duis euismod diam tellus, eget dictum ante suscipit quis. Nunc sed est ipsum. Nunc luctus augue id sapien blandit fermentum. Aenean eget ipsum lacinia mi eleifend luctus at a arcu.
-					</p>
+          <p>
+            Since noradrenaline removes the edge and reality off memories, it
+            allows for processing and connecting of memories without feelings of
+            shame or judgement. In a sense, it is a limitless space where
+            creativity and ideas can blossom, without fear of repercussions,
+            without having to answer to logical questions such as ‘how?’ and
+            ‘why?’. I remember the clashing pink and blue dress my grandma used
+            to wear as she tended to her cucumbers,
+            <img
+              class="cucumber"
+              src="assets/images/cucumber.png"
+              alt="Cucumbers"
+            />
+            in the garden, during the 30-degree scorching heat (Holovenko). I
+            remember a nosebleed, a paddling pool. Back to the present day, I
+            have a nosebleed. The following night, I dream of my grandma. I
+            connect her pink and blue dress to the pink and blue bouquet of
+            flowers I saw as I walk by the florist. Her memory lives on in the
+            wonderland of sleepy processing of unrelated experiences. By
+            sparking connections, we make links that we otherwise wouldn’t have
+            thought of. Allowing these insightful patterns to take a hold of us,
+            means we allow the biases of the everyday to float away, and we
+            uncover new narratives that are free from any constraints.
+          </p>
 
-					<p>
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta, malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros nec turpis.
-					</p>
+          <p>
+            The processing that occurs within dreaming is linked to
+            problem-solving abilities, as shown by leading researchers, (Walker
+            221-230). This means you can use dreaming as a way to create ideas
+            and solutions for worries you have in your life. If you are worried
+            about an interaction that will happen in a week, you may dream of
+            the interaction and the noradrenaline released in your brain will
+            provide a safe space for you to deal with the future, combining
+            experiences from the past and the present.
+          </p>
 
-				</details>
+          <p class="text-block" id="text1-billy">
+            This interlinking of time can get weirder. On an August night in
+            2021, I sleep talked about Billy Longclaws<sup
+              ><a href="#billy-longclaws-sleeptalk" class="sidenote-link"
+                >🤷‍♂️01:32</a
+              ></sup
+            >.
+            <span
+              id="billy-longclaws-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <span style="font-family: 'Eskapade'">🤷‍♂️01:32 </span> <br />
+              <br />Uh. Uh no, no. No, no no no no. You know exactly what? You
+              are Billy Longclaws. <br />
+              <br />
+              <span id="right-side-text-info"
+                >Wednesday 4th August, 2021.
+              </span></span
+            >It is unknown why my subconscious thought he was important enough
+            to mention, but nevertheless, here I am writing about him. Not much
+            is known about Billy Longclaws, except that he was an Indigenous
+            American person, connected to the Hudson’s Bay Trading Company. My
+            sleep talk led me down a spiral to find out more about him, they
+            made somebody seemingly non-important in the book of history have
+            some importance again in the future.
+          </p>
 
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta, malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros nec turpis.
-				</p>
+          <img
+          src="assets/images/main images/billy-longclaws.png"
+          class="image-inside"
+          alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+        />
 
-				<h2 id="chapter-2">Chapter 2</h2>
-				<blockquote>
-				<p>Our struggle for the trees and forests is first and foremost a democratic and popular struggle. Because a handful of forestry engineers and experts getting themselves all worked up in a sterile and costly manner will never accomplish anything! Nor can the worked-up consciences of a multitude of forums and institutions—sincere and praiseworthy though they may be—make the Sahel green again, when we lack the funds to drill wells for drinking water a hundred meters deep, while money abounds to drill oil wells three thousand meters deep!<span id="footnote-12-reference" class="footnote-reference" data-index="12">12</span></p>
-			</blockquote>
-				<p>
-					Proin non pellentesque leo. Integer finibus luctus mi eu egestas. Integer placerat non tortor id lacinia. Donec faucibus fermentum porta. Praesent fringilla sapien id tempor vestibulum. Morbi egestas dolor vitae lacus mattis, id posuere nulla viverra. Ut ultricies placerat mi, et porttitor nunc sodales sit amet. Cras vehicula lectus eget tortor efficitur, sit amet imperdiet velit varius. Pellentesque ultricies purus pretium magna efficitur, eget interdum orci dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum finibus, lorem at blandit luctus, massa libero feugiat ex, non fringilla ante sem quis lorem. Cras ac consequat dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque suscipit turpis leo, at dapibus justo rutrum sed. In nunc nunc, sagittis eget rutrum consectetur, tempus vitae augue.
-				</p>
+          <p>
+            Turning non-importance into importance - providing a platform for
+            highlighting value - is beautiful<sup
+              ><a href="#beautiful-sleeptalk" class="sidenote-link"
+                >🌈05:23</a
+              ></sup
+            >.
+            <span
+              id="beautiful-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+            <span style="font-family: 'Eskapade'">🌈05:23
+            </span> <br />
+            <br />So beautiful. Beautiful. <br />
+            <br />
+              <span id="right-side-text-info"
+                >Tuesday 29th December, 2020.
+              </span></span
+            >
+            In the realm of sleep talk, this is relevant to the idea that sleep
+            talk can sound like nonsense. Sleeping and dreaming can be seen as
+            something unimportant, something that you can skip a few hours of if
+            you have an upcoming deadline. But the truth is, they are part of
+            our instinct, not something we chose. And as an effect of this
+            condition, sleep-talk should not be dismissed as non-important. Even
+            though sleep talk is an unintentional by-product of dreaming, it
+            doesn’t mean it isn’t valuable. It is a collection and documentation
+            of your dreams – a transcript. A play-by-play, an in-the-moment
+            rationalisation of the ideas and patterns that are entangled in the
+            confusing web of dreams. Sleep talk enables direct access and
+            insight to the creativity of the subconscious.
+          </p>
 
-				<figure>
+          <p>
+            This transcript is an ever-updated catalogue of past, present and
+            future memories. How could this ever not be useful?
+          </p>
+        </section>
 
-					<a href="content/painting-forest-lake.jpg" target="_blank">
-				    	<img src="content/painting-forest-lake.jpg" alt="A painted representation of a forest with a big blue lake" width="100%" height="auto">
-				    </a>
+        <section id="section-4" class="section">
+          <h2 class="section-titles" id="chapter-2">
+            Chapter 2: Understanding the transcript of the night
+          </h2>
 
-				    <figcaption>
+          <p>
+            A stimulating connection that is made during sweet slumber could be
+            forever lost, if not for the tools available that enable the
+            recording of sleep talk. Waking up in the morning is exciting when I
+            know my (not so) genius ideas have been harvested by the hard work
+            of Prime Sleep Recorder. Silence is filtered out; only pure gold and
+            some loud snores are left over. The path has been paved that enables
+            me to access the narratives that I have spun and woven overnight.
+            The unique connections that would take super strength to make during
+            the day, but come so effortlessly to us during the night, have been
+            documented and laid out, easily accessible.
+          </p>
 
-				    	<p>
-				    		<em><a href="https://www.youtube.com/watch?v=bkKTSw4pL2A" target="_blank">Painting of a forest with a blue lake</a>, by Anonymous</em>
-				    	</p>
+          <p>
+            The tension between the conscious, in the sense of “perceiving,
+            apprehending, or noticing with a degree of controlled thought or
+            observation” (Merriam-Webster) and the subconscious, or “the part of
+            your mind that notices and remembers information when you are not
+            actively trying to do so” (Cambridge) is what makes the
+            interpretation of the transcript interesting. The difference seems
+            to be within the intentionality, so combining these two states of
+            mind, weaving in and out of control, can cast light on narratives
+            and perspectives previously hidden in the shade of our minds.
+          </p>
 
-				    </figcaption>
+          <p>
+            First, I archive through the night, through the act of dreaming,
+            sleep talking, processing the day, making natural connections,
+            memories floating through my brain. Then, I archive during the day,
+            reviewing the audio recordings of the night, filtering through the
+            snores and mumbles and structuring what has been created, making
+            sense of what has occurred, be that through posting on Instagram or
+            through drawing
+            <sup
+              ><a href="#billy-longclaws-sleeptalk" class="sidenote-link"
+                >🤷‍♂️</a
+              ></sup
+            >.
+            <span
+              id="billy-longclaws-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <sup>🤷‍♂️</sup> Uh. Uh no, no. No, no no no no. You know exactly
+              what? You are Billy Longclaws.
+              <br />
+              <br />
+              <span id="right-side-text-info"
+                >Wednesday Aug 4th, 2021. 01:32
+              </span></span
+            >
+            The act of this ‘double archiving’ layers the natural subconscious
+            of the night with the structured consciousness of the day, creating
+            an interesting angle to view the world. This is specifically the
+            collection and patterns that are unique to me, my own curation.
+            Although, it is important to mention that I am not the single
+            creator of this curation, as every input from every experience,
+            conversation, and encounter with those around me has led to these
+            thoughts and feelings.
+          </p>
 
-				</figure>
+          <p>
+            What is so exciting about this documentation, is that recently,
+            scientists have established how to decode and visualise dreams using
+            MRI (Walker 197). However, the visualisations are very limited. For
+            example, it is possible to tell when someone is dreaming about a
+            man, a woman, or an animal, but it is not possible to tell when
+            someone is dreaming about “the forest bunny”<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >.
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span>
+            </span>
 
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta, malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros nec turpis.
-				</p>
+            This is where documentation of sleep talk comes in handy. By
+            gathering an archive of sleep talk across multiple years, I have
+            been able to analyse each entry, looking for patterns not only
+            across one night of sleep, but across the entire archive. For
+            example, nature is a prominent theme<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >.
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span>
+            </span>
+            Could looking at recurring themes that our subconscious brings to
+            light help us get better insight into ourselves and the narratives
+            we truly feel are important? An interesting direction for future
+            research would be to explore this question through methods of Corpus
+            Linguistics and corpus-based lexicography (e.g. Sinclair; McEnery &
+            Hardie, Kilgarriff et al.), which looks for such recurring patterns
+            in large collections of naturally occurring texts, reading it
+            ‘vertically’, not only ‘horizontally’. With the help of these
+            methods and tools, my ‘sleep talk corpus’ could become a source for
+            creating a visual dictionary of my dreams.
+          </p>
 
-				<h2 id="epilogue">Epilogue</h2>
+          <p>
+            This is also relevant for those unfortunate enough not to sleep
+            talk. Listening to our subconscious can be a vital tool for
+            recognising ongoing themes, worries and other patterns that our
+            conscious may ignore. This can be done through dream journaling as
+            well as therapeutically discussing dreams. In fact, the Hill
+            Cognitive-Experiential Model of Dream Interpretation discovered that
+            “dream reports include personally significant elements that may help
+            in gaining self-understanding” (qtd. in Revonsuo 898).
+          </p>
 
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed a sem dignissim, pulvinar risus sed, maximus mi. Sed non neque et nulla dignissim convallis. In tincidunt pharetra feugiat. Etiam vel velit accumsan, hendrerit lorem et, aliquet est. Fusce et ante porta, malesuada felis eget, vulputate elit. Quisque eu lacus egestas, maximus tellus non, commodo arcu. Nullam orci odio, molestie vel suscipit vitae, aliquam at ante. Sed vehicula dapibus elit, eget posuere sem porttitor eget. Fusce aliquam interdum tortor, et pharetra dui. Donec consectetur vestibulum ipsum, sed euismod odio. Mauris dictum, velit sit amet dictum imperdiet, enim ex laoreet lorem, ut sodales ex eros nec turpis.
-				</p>
+          <p>
+            As important as dream journaling and talking about dreams is, I want
+            to focus on sleep talk documentation as the tool we need to extract
+            nocturnal ideas without the interference and the clumsiness of the
+            consciousness. When we are awake, we try to rationalise and explain
+            what we dreamt in the night, in terms that we deem normal and
+            understandable, but in this way, we butcher the beauty of the
+            irregular, the irrational. Recording sleep talk is the clear bridge
+            between the conscious and subconscious: a transcript that may
+            sometimes be hard to understand, but is pure, and full of blemishes
+            that are in fact, not blemishes at all.
+          </p>
 
-			</main>
+          <p>
+            Giving so much attention to our dreams fuels a positive feedback
+            loop that allows us to get a much wider understanding of the
+            narratives created. The subconscious uses REM sleep to make quick,
+            seemingly random connections between unrelated topics, extracting
+            patterns previously unseen, then, in the day, you complete the
+            ‘double archiving’ by searching through recurring themes, such as by
+            searching and analysing through dream journaling, or in my case,
+            searching and analysing my archive of sleep talk recordings. While
+            thinking about sleep talk so much, I fuel more patterns to be found
+            while asleep, based on the patterns I found while awake. And on it
+            goes!
+          </p>
 
+          <p>
+            Recording in itself means giving importance to something,
+            preserving. Back to the idea of non-importance, we can also touch
+            upon productivity, in the sense of the definition, that ”a lot of
+            good or useful things happen as a result of it” (Collins).
+            Chattering nonsense while in a blissful slumber can be seen as
+            worthless, non-productive but with the connections being made, and
+            stories being recorded, there is a goldmine of things to hear,
+            things to imagine when going through what has been said<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >.
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span> </span
+            >In this way, it can be seen as productive after all, as “good
+            things” do indeed happen as a result of it. I will argue that sleep
+            talk is necessary for the improvement of how we construct
+            narratives. Even for those that do not sleep talk, the sharing of
+            these narratives can be insightful, which will be discussed in the
+            following chapter. Free of judgement and other constraints, what we
+            say during the night is the purest form an idea can take.
+          </p>
 
+          <p>
+            Antti Revonsuo’s research on the function of dreaming indicates that
+            dreaming is evolutionarily necessary for simulating threatening
+            events and playing them through the night to practise threat
+            avoidance(882-883). This means that we are learning to avoid
+            scenarios in real life. Often the risky scenarios are the ones that
+            create the most interesting stories<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >.
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span> </span
+            >We are actively preventing those narratives from unfolding.
+            Although it may be strange to dwell on the what-could-have-been, the
+            event <span style="font-style: italic">has</span> already been,
+            albeit in our dreams. And the wonder of being able to record that
+            event, without getting in any danger ourselves is invaluable. In The
+            Dream World of Dion McGregor (He Talks in His Sleep), an album of
+            sleep talk recordings, we become witness to these alternate universe
+            narratives. McGregor speaks of “Edwina” who “got too friendly with a
+            crocodile and he nipped her leg off right at the side”. These
+            intensive recordings which last for multiple minutes provide a
+            highly detailed insight into narratives that we would otherwise not
+            be able to experience. By recording sleep talk, I give space to
+            narratives that otherwise never would have gotten a chance to
+            blossom. The narratives of the parallel universes, of the
+            what-could-have-beens.
+          </p>
 
-			<footer>
+          <p class="text-block" id="text2-mirtha-notebook">
+            Furthermore, recording sleep talk allows us to challenge the limits
+            of language, similar to the way Mirtha Dermisache explores in her
+            “illegible writing” (Barthes). Dermisache challenges the blocks and
+            boundaries that language has created for us to be able to express
+            ourselves fully. Reminiscent of childish scribbles, we are reminded
+            of the time when we learnt how to write, a time where we would
+            imitate what we would see, before learning the alphabet, in a
+            desperate desire to express ourselves. A time where we were still
+            free to explore ideas in all ways possible, before we were
+            conditioned at school to think in a certain way (Podd et al.).
+            Drawing a parallel, the way we expressed ourselves through those
+            scribbles, linked with the creative way we thought, is similar to
+            the way I express myself through the language of sleep talk, free of
+            the boundaries that my conscious mind is confined to.
+          </p>
 
-				<hr>
+          <img
+            src="assets/images/main images/childhood-and-mirtha.png"
+            class="image-inside"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
 
-				<p>
-					Last edit date: 2023/12/11
-				</p>
+          <p class="text-block" id="text3-childhood-image">
+            As those of us who sleep talk are releasing uncontrolled noises,
+            singing<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >,
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span>
+            </span>
+            chatter, is this all the pent-up energy that we have not been able
+            to express previously? It is at least a step in the right direction.
+            Being able to record this enables us to access language and
+            communication at its most raw and pure, almost back to the childlike
+            way of thinking, but with a layer added of the accumulation of
+            experiences that an adult has experienced.
+          </p>
 
-			</footer>
+          <img
+            src="assets/images/main images/mirtha-dermisache-bw.jpeg"
+            class="image-inside-option2"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
 
+          <p>
+            The act of interpreting those transcripts in itself can result in
+            interesting ideas. As the way I talk in my sleep is different to the
+            way I talk while awake<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >,
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span>
+            </span>
+            it could be seen as a different way of using speech. We then begin
+            to see the limitations of our speech, the societal constructs we
+            have created, and how they alter in sleep talk. We push the
+            boundaries of language, which allows us to push the boundaries of
+            narrative-creation and symbolism. If the stories we create are
+            limited to the language we use, opening up the way we use and
+            interpret language can help us in opening up the way we create
+            narratives.
+          </p>
 
+          <p>
+            Since there is a distinction between the way we see the world in our
+            dreams, compared to the “real world”, there is a friction, in the
+            sense that we have to interpret the subconscious using our
+            conscious. There are many different ways to do this, and each
+            individual will approach this differently. As an example, during my
+            Visual Essay class, I used my childhood drawings as a visual
+            explanation of what my sleep talk recordings could mean. I used the
+            creativity I had as a child to explain these, while using a tagging
+            system of the present day to explain the emotions and themes of each
+            sleep talk episode.
+          </p>
 
-		</div>
+          <p>
+            This is related to synaesthesia and sound symbolism, as explored by
+            V. S. Ramachandran and Edward Hubbard in their research on the way
+            we perceive language, specifically the way we attach meaning to
+            shapes and sounds. Across different languages, they found we
+            consistently assign the same name to abstract shapes, as seen in the
+            example below where 95% to 98% of participants associated the
+            rounder abstract shape to the name ‘Bouba’, whereas the spiky shape
+            was considered to be ‘Kiki’ (19).
+          </p>
 
+          <img
+            src="assets/images/main images/kiki-bouba.png"
+            class="image-inside"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
 
+          <p>
+            This is an interesting observation, because it suggests that the way
+            we see shapes could transcend language. In regard to sleep talk, it
+            could mean that the words we hear and the sounds we make may have a
+            clear association to a graphic element, which is what I have begun
+            to explore with my Visual Essay.
+          </p>
 
-		<!-- end webpage content -->
+          <p>
+            However, shape and sound are not the only elements that are at play,
+            and each individual is bound to have their own interpretation. So
+            let’s explore what it means to open this up, and figure out why this
+            should be a collective, rather than individual experience.
+          </p>
+        </section>
 
+        <!-- <figure>
+		  
+							  <a href="content/painting-forest-lake.jpg" target="_blank">
+								  <img src="content/painting-forest-lake.jpg" alt="A painted representation of a forest with a big blue lake" width="100%" height="auto">
+							  </a>
+		  
+							  <figcaption>
+		  
+								  <p>
+									  <em><a href="https://www.youtube.com/watch?v=bkKTSw4pL2A" target="_blank">Painting of a forest with a blue lake</a>, by Anonymous</em>
+								  </p>
+		  
+							  </figcaption>
+		  
+						  </figure> -->
 
+        <section id="section-5" class="section">
+          <h2 class="section-titles" id="chapter-3">
+            Chapter 3: Being vulnerable and sharing
+          </h2>
+          <p>
+            So far I have discussed the use of transcription, sound symbolism,
+            and the limits of language. In the pursuit of making your own
+            subconscious ideas more accessible for others, transcription in
+            itself is a key element, the facilitator for connectivity. By having
+            my sleep talk recorded while I sleep, a transcript is generated as
+            the night progresses, night after night, filling in the gaps of my
+            archive, enhancing, enriching. The act of transcribing already makes
+            everything grounded in our awake reality in a way that is not
+            possible without. In the way the MRI machines illuminate some basic
+            ideas of the night, Prime Sleep Recorder acts as an in-depth log
+            book of everything that has been splurged out. Having a transcript
+            that others can listen to, or that can be written down and shared
+            with others, gives a way for others to understand my strange
+            subconscious thoughts without the misunderstandings that can take
+            place through verbal explanation. Using drawing as a medium can also
+            facilitate further accessibility and understanding within the
+            viewer, transforming sleep talk from a language only the speaker
+            seems to understand, to a comprehensible visual language, a form of
+            communication. Since we all have different experiences, opinions and
+            upbringings, we could interpret a retelling of a story in a
+            different way than intended. Having direct access to the transcript
+            of sleep talk is the direct link, the pure primary source, which is
+            further enhanced by having a clear visual language.
+          </p>
 
-	</body>
+          <p>
+            Why do our mothers start doodling on the backs of receipts when on a
+            long phone call (Babych)? Why do we still have sketch artists in
+            courtrooms? Drawing enables an instant expression of ideas lying
+            beyond the limitations of language. To prevent the information
+            residue leaking out through the filtering process of
+            ‘double-archiving’, we should aim to represent information in the
+            clearest way possible, especially when it comes to cloudy, confusing
+            narratives that we only half understand, such as sleep talk. Drawing
+            is present across all cultures, parts of the world, throughout
+            history. Neil Cohn argues that drawing is an innate instinct, that
+            drawing has its own repeated vocabulary and syntax structure (3). We
+            can, and should, use this instinct to our advantage.
+          </p>
 
+          <p>
+            This unclouded information is key to being able to convey a message
+            to others as clearly as possible. If a message is in its purest
+            form, this simplifies all else that is needed for good design. Once
+            you boil down what graphic design really is, it is about the way you
+            communicate, how to get a message from one person to the next, with
+            the least amount of obfuscation and miscommunications<sup
+              ><a href="#bunny-sleeptalk" class="sidenote-link">🐰</a></sup
+            >.
+            <span id="bunny-sleeptalk" class="footnote-inside right-side-text">
+              <sup>🐰</sup> Fine. Nein. See in that envelope bottom? In the
+              right. Or in the lower… in the lower right? On the lower left.
+              Okay, thank you.<br />
+              <br />
+              <span id="right-side-text-info"
+                >Tuesday Jan 9th, 2024. 04:31
+              </span> </span
+            >For a message to really land, to be received well, you need a
+            listener to activate the idea. There is no use keeping these ideas
+            to yourself. We need to tune in to the desire to connect and not
+            only share, but also listen. There is a real importance in sharing,
+            in storytelling, it helps us cultivate a deeper empathy. A story on
+            its own is nothing, it doesn’t bring up emotions just by being, it
+            must be interacted with to become powerful. “The story must be read,
+            the song must be listened to” (Tempest 49) as must the sleep talk,
+            despite the fact that perhaps it was never intended to be perceived
+            by others. When we listen to it, we give it importance. These are
+            documentations of the patterns the brain makes during the night. It
+            is something beautiful, humorous, human. If we pay attention and
+            listen to each other, listen to each others sleep talk, listen to
+            each others dream recounts, we activate narratives out of this
+            world.
+          </p>
+
+          <p>
+            Listening to dreams, and more importantly, visualising them, has
+            been an important theme for filmmakers, visual artists, and even for
+            entire cultural movements. Here I will discuss just a few examples
+            relevant to the topic. As a filmmaker, Federico Fellini exemplifies
+            how to activate nocturnal narratives, since his dreams often creep
+            into his films. By creating ‘The Book of Dreams’, Fellini uses the
+            medium of drawing as a method of documentation. As he describes, his
+            “scribbles, rushed and ungrammatical notes” encapsulate a language
+            so indescribable, that drawing must act as a captor of ideas. In
+            doing so, documenting all the nonsensical ideas and scribbles
+            sprawled across your mind, you create your own grammar and structure
+            for a visual language. The base of this visual language: honesty,
+            vulnerability and being human.
+          </p>
+
+          <img
+            src="assets/images/main images/fellini.png"
+            class="image-inside"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
+
+          <p>
+            Jim Shaw is another artist who feels the importance of sharing the
+            vulnerable creations that are generated while sleeping, through
+            drawing. By sharing an experience as intimate as dreaming — which
+            occurs in a state of sleep where we are paralysed — we are
+            vulnerable and become more human. We compare and contrast our
+            patterns, and nurture an environment of empathy, of storytelling, of
+            sharing, of listening. Bonding over basic human instinct, rather
+            than the choices we make. In his book ‘Dreams’ he illustrates his
+            dreams, accompanied by a text explanation of what happened. The
+            narratives that appear are so unusual and uncanny in a way that the
+            conscious would never have been able to dream up. By documenting and
+            sharing the subconscious narratives he has created, he opens up his
+            secrets, his shameful thoughts and his mind to everybody. In doing
+            so, he fosters an environment in which openness and honesty are at
+            the forefront. The humanising nature of doing so generates interest
+            from audiences who either connect or feel a disconnect to the themes
+            of the dream. However, even through the disconnect they see the
+            vulnerability, which is a feeling they can connect to themselves,
+            encouraging a sharing culture among others. Shaw’s original
+            intention with the drawings was to have a way of archiving the
+            creativity of his subconscious. In using this archiving tool, he
+            collected as much inspiration as possible for potential artworks of
+            the future (The Museum of Modern Art). In the same way, I try to
+            share my sleep talk, as an archive accessible to all, through
+            Instagram. I enjoy the conversations that the recordings kickstart,
+            the interpretations that different friends have. The way some people
+            find it hilarious, some find it scary. Again, sleep talk must be
+            listened to in order to activate its full power.
+          </p>
+
+          <img
+            src="assets/images/main images/jim-shaw.png"
+            class="image-inside"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
+
+          <p>
+            By posting on Instagram, I expose my vulnerable silliness along with
+            the strange sentences I construct. In this sleep talk example,
+            posted in January 2021, I sleep talked about “the amazing place
+            called Zubazuba”<sup
+              ><a href="#zubazuba-sleeptalk" class="sidenote-link">🌴</a></sup
+            >.
+            <span
+              id="zubazuba-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <sup>🌴</sup> Nahh no. Is it? No! Forget that! Let me see. Is…
+              uhhh getting to reach the amazing place called… Zubazuba (it’s
+              really cool).<br />
+              <br />
+              <span id="right-side-text-info"
+                >Monday Jan 25th, 2021. 03:37
+              </span>
+            </span>
+            It is clear that I am having a conversation in my dream, however,
+            the act of recording sleep talk lacks the other side of the
+            conversation. As the result is a one-sided conversation, it is
+            interesting to activate the work by having an audience interact,
+            engage and listen to it in a conscious state, an attempt to uncover
+            the narrative. Even the act of uploading it on Instagram enables
+            this conversation to start to come alive, such as through the
+            comment section.
+          </p>
+
+          <img
+            src="assets/images/main images/zubazuba.png"
+            class="image-inside-option3"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
+
+          <p>
+            Looking further towards vulnerability and honesty in a collective
+            setting, we can turn to Sophie Calle’s work. In ‘Take Care of
+            Yourself’ Calle sends the break-up letter her boyfriend sent her to
+            women of many different professions and asks them to analyse it from
+            their perspective. She compiles each and every one of them, creating
+            a big, heavy book. The result offers the reader a view inside the
+            pain that Calle may have felt at the time. Exposing something so
+            private in such an analytical way helps get to the core of the
+            message in a humorous way. Combining such a vast array of
+            perspectives and opinions creates a documentation so nuanced, that
+            any one individual would not have been able to reach that point on
+            their own. It is about showing what you know, but also listening to
+            what others have to say<sup
+              ><a href="#zubazuba-sleeptalk" class="sidenote-link">🌴</a></sup
+            >.
+            <span
+              id="zubazuba-sleeptalk"
+              class="footnote-inside right-side-text"
+            >
+              <sup>🌴</sup> Nahh no. Is it? No! Forget that! Let me see. Is…
+              uhhh getting to reach the amazing place called… Zubazuba (it’s
+              really cool).<br />
+              <br />
+              <span id="right-side-text-info"
+                >Monday Jan 25th, 2021. 03:37
+              </span>
+            </span>
+            In an interview with Brian Dillon, Calle says “I have to write
+            everything down before it escapes” (History Lessons No 5: Take Care
+            of Yourself) and it is in the same way I am passionate about
+            recording sleep talk, to document all my ideas before they escape.
+            Not only this, but sharing with others, so that their perspectives
+            allow the ideas to gain a life of their own through narration
+            development and interpretation.
+          </p>
+
+          <img
+            src="assets/images/main images/sophie-calle.png"
+            class="image-inside"
+            alt="My Childhood Sketchbook and Mirtha Dermisache's Work"
+          />
+
+          <p>
+            Exposing yourself at your most vulnerable, in this case while you
+            are sleeping, encourages an honest approach to design. A way for
+            honest narratives to be crafted while maintaining their authenticity
+            and raw feel. No sugar-coating, just genuine feelings and
+            connections. As Kae Tempest puts it: naked language has a humanising
+            effect (22). The naked truth is humanising, as is the raw content of
+            my sleep talk recordings. Fostering an environment where we share
+            and listen with honesty allows for pure connections, meaning clear
+            communication from one to the other.
+          </p>
+
+          <p>
+            By sharing the “off-stage self, the non-public you… the you that you
+            encounter in the middle of the night… the same you that’s in
+            everyone else” (16), you recognise the shared patterns that connect
+            us, no matter the background or perspective.
+          </p>
+        </section>
+
+        <section id="section-6" class="section">
+          <h2 class="section-titles" id="conclusion">Conclusion</h2>
+          <p>
+            The potential of recording sleep talk is extraordinary. It provides
+            us a base for the creation of a visual language, which will be
+            enhanced with future technologies, generating an understandable,
+            shareable language that transcends the limits of misunderstandings.
+            Using the widely available tool of drawing enables us to draw out
+            creativity, imagination, and visualise the connective pattern-making
+            of the night.
+          </p>
+
+          <p>
+            This field of research craves more: more recordings, more inputs,
+            more outputs, more sharing, more conversations, more experiences,
+            more research — both scientific and artistic. Along with these
+            discoveries comes the pushing of linguistic boundaries, resulting in
+            opportunities to communicate more effectively, with clarity, purpose
+            and understanding. This piece of writing acts as a launchpad for my
+            own practice, using the understanding of what it takes to formulate
+            a visual language that communicates ideas with efficiency and
+            understanding while maintaining warmth and humour. Paying attention
+            to the ideas that the subconscious generates will enable ideas to
+            come to life, to communicate with such vivacity and humanity that it
+            will be impossible not to understand.
+          </p>
+        </section>
+      </div>
+      <div class="right-side">
+        <!-- <p id="envelopes-sleeptalk" class="right-side-text">
+          <sup>💌</sup> Fine. Nein. See in that envelope bottom? In the right.
+          Or in the lower… in the lower right? On the lower left. Okay, thank
+          you.<br />
+          <br />
+          <span id="right-side-text-info">Tuesday Jan 9th, 2024. 04:31 </span>
+        </p> -->
+
+        <!-- <p id="billy-longclaws-sleeptalk" class="right-side-text">
+          <sup>🤷‍♂️</sup> Uh. Uh no, no. No, no no no no. You know exactly what?
+          You are Billy Longclaws. <br />
+          <br />
+          <span id="right-side-text-info">
+            Wednesday Aug 4th, 2021. 01:32
+          </span>
+        </p> -->
+
+        <!-- <p id="bunny-sleeptalk" class="right-side-text">
+          <sup>🐰</sup> Oh. Oh yeah. Um *tut* um th-th the forest one. The
+          forest bunny- eh what's he called? Eh what's uh... what's he called?
+          <br />
+          <br />
+          <span id="right-side-text-info">
+            Wednesday Feb 17th, 2021. 03:36
+          </span>
+        </p> -->
+
+        <!-- <p id="zubazuba-sleeptalk" class="right-side-text">
+          <sup>🌴</sup> Nahh no. Is it? No! Forget that! Let me see. Is… uhhh
+          getting to reach the amazing place called… Zubazuba (it’s really cool)
+          <br />
+          <br />
+          <span id="right-side-text-info"> Monday Jan 25th, 2021. 03:37 </span>
+        </p> -->
+      </div>
+      <div class="footer">
+        <div class="experiences-container">
+          <h3>Experiences</h3>
+          Gengler, Lucy & Kurella Maya. A search for envelopes. City Centre, The
+          Hague, The Netherlands. 9 January 2024. <br />
+          Holovenko, Maya. Tending to her garden. Sokolivs’ke, Ukraine. Every
+          Summer, 2001-2016. <br />
+          Kurella, Maya. Drawing freely as a child. 2001-2019. <br />
+          Podd. A hug from Ms Podd in Reception (Kindergarten). 2005. <br />
+          Podd, et al. Teaching Maya Kurella through Primary School. September
+          2005-July 2012. <br />
+        </div>
+        <div class="written-material-container">
+          <h3>Written material</h3>
+          Dillon, Brian. “History Lessons No 5: Take Care of Yourself.”
+          ArtReview, 1 Apr. 2020,
+          www.artreview.com/history-lessons-7-april-2020-brian-dillon-sophie-calle-interview/.
+          Accessed 23 Jan. 2024. <br />
+          Frederico. The Book of Dreams. Rizzoli, 2020. <br />
+          Hill, Clara & Rochlen, Aaron. “The Hill Cognitive-Experiential Model
+          of Dream Interpretation.” Journal of Cognitive Psychotherapy. 16.1
+          (2002): 75-89. — double check page numbers “Jim Shaw. Dream Drawing (I
+          Was Seeing an Old Atomic Bomb Test ...).” MoMA,
+          www.moma.org/collection/works/82236. Accessed 30 Jan. 2024. <br />
+          Kilgarriff, A., Rychly, P., Smrz, P., & Tugwell, D. (2008). The sketch
+          engine. Practical Lexicography: a reader, 297-306.
+          <br />
+          McEnery, Tony, and Andrew Hardie. Corpus linguistics: Method, theory
+          and practice. Cambridge University Press, 2011.
+          <br />
+          "Productive." Collins English Dictionary, HarperCollins Publishers,
+          2023, https://www.collinsdictionary.com/dictionary/english/productive.
+          Accessed 3 Feb. 2024. <br />
+          Ramachandran, Vilayanur & Hubbard, Edward. “Synaesthesia—A Window Into
+          Perception, Thought and Language.” Journal of Consciousness Studies
+          8.12 (2001): 3-34. — double check page numbers <br />
+          Revonsuo, Antti. "The Reinterpretation of Dreams: An Evolutionary
+          Hypothesis of the Function of Dreaming." Behavioral and Brain
+          Sciences 23.6 (2000): 877-901. Print.
+          <br />
+          Sinclair, John. Trust the text: Language, corpus and discourse.
+          Routledge, 2004.
+          <br />
+          Tempest, Kae. On Connection. Faber and Faber, 2022. <br />
+          Walker, Matthew. Why we sleep: Unlocking the power of sleep and
+          dreams. Simon and Schuster, 2017.
+        </div>
+        <div class="tools-container">
+          <h3>Tools for recording & sharing</h3>
+          [@mayasleeptalks]. Kurella, Maya. Posts Instagram, Accessed 18 Jan
+          2024, Retrieved from www.instagram.com/mayasleeptalks/. <br />
+          Prime Sleep Recorder, V 6.5.11. iPhone software. Apple App Store.
+          Apirox s.r.o.. December 2023. Web. 9 July 2019.
+        </div>
+        <div class="cited-images-container">
+          Images “Billy Longclaws and his wife at Fort Ellice.” Photograph. A
+          view of the Birdtail, by Marion Abra, The History Committee of the
+          Municipality of Birtle, 1974, p. 5. Museo Malba. "Mirtha Dermisache —
+          Sin título (libro), 1967". YouTube, 15 Aug. 2017,
+          www.youtube.com/watch?v=0k7T4KzDaKw. Kurella, Maya. Pretending to be
+          able to write. 2004. Personal Collection. Dermisache, Mirtha. Diario
+          N° 1, Año 1. 1972. Museo de Arte Latinoamericano de Buenos Aires,
+          www.coleccion.malba.org.ar/en/diario-n-1-ano-1/. Kurella, Maya. A
+          Lexicon of the (Visual) Language of Sleep Talk. 2024. Personal
+          Collection. Kurella, Maya. Illustration of Kiki and Bouba. 2023.
+          Personal Collection. Shaw, Jim. Dream Drawing (I was seeing an old
+          atomic bomb test…). 1995. The Museum of Modern Art, New York,
+          www.moma.org/collection/works/82236. Calle, Sophie. Take Care of
+          Yourself. Actes Sud, 2007. Micamera,
+          www.micamera.com/en/prodotto/take-care-of-yourself-sophie-calle/
+          [@mayasleeptalks.] “25.01.2021 ahahahahahah i’m going to start a
+          gofund me so i can buy can island and call it zubazuba” Instagram, 25
+          Jan, 2021, www.instagram.com/p/CKe9a7KIArL/?hl=en. Fellini, Federico.
+          “[Drawing of a plane/blimp flying above water]”. The Book of Dreams,
+          Rizzoli, 2020,
+          insight.randomhouse.com/widget/v4/?width=600&height=800&isbn=9788891826183
+        </div>
+        <div class="sleep-talk-container">
+          <h3>Ever-growing Unpublished Sleep Talk Archive:</h3>
+          Well I'm just I'm looking! I'm Maya. Thursday December 24th, 2020.
+          01:46 <br />
+          Fine. Nein. See in that envelope bottom? In the right. Or in the
+          lower… in the lower right? On the lower left. Okay, thank you. Tuesday
+          Jan 9th, 2024. 04:31 <br />
+          Uh. Uh no, no. No, no no no no. You know exactly what? You are Billy
+          Longclaws. Wednesday Aug 4th, 2021. 01:32 <br />
+          Oh. Oh yeah. Um *tut* um th-th the forest one. The forest bunny- eh
+          what's he called? Eh what's uh... what's he called? Wednesday Feb
+          17th, 2021. 03:36 <br />
+          But in course. I’m gonna do the boat though. Monday Feb 1st, 2021.
+          02:37 <br />
+          Nahh no. Is it? No! Forget that! Let me see. Is… uhhh getting to reach
+          the amazing place called… Zubazuba (it’s really cool) Monday Jan 25th,
+          2021. 03:37
+        </div>
+      </div>
+    </div>
+
+    <main></main>
+
+    <footer></footer>
+    <!-- </div> -->
+
+    <!-- end webpage content -->
+  </body>
 </html>
