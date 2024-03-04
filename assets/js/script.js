@@ -71,5 +71,11 @@ $(document).ready(function () {
           audioPlayer.play();
       });
   });
+
+  document.getElementById('playAudio').addEventListener('click', function() {
+    var audio = document.getElementById('mayaAudio');
+    audio.play();
+  });
+
   })
 

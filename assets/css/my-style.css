@@ -10,6 +10,7 @@ body {
   /* height:100% */
   background-color: rgb(227, 239, 235);
   /* margin: 20%; */
+  /* cursor: url('assets/images/drawn-drawings/cursor.png'), auto; */
 }
 
 /* main {
@@ -20,19 +21,23 @@ body {
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 45rem 1fr 3rem;
+  grid-template-rows: 47rem 1fr 3rem;
   grid-column-gap: 10px;
   grid-row-gap: 7px;
   height: 100vh;
+}
+
+a{
+  text-decoration: none;
 }
 
 .header {
   grid-area: 1 / 1 / 2 / 7;
 }
 
-
-.left-side, .middle {
-  display: flex;
+.left-side,
+.middle {
+  display: relative;
   flex-direction: column;
   justify-content: start;
 }
@@ -45,34 +50,30 @@ body {
   position: relative; /* Allows for absolute positioning within */
 }
 
-
-
-
-
-.image-inside{
-  position:absolute;
-  display:block;
-  width:calc(15vw - 10px - 10px);
-  margin-left:calc(35px - 20vw + 10px);
+.image-inside {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
   margin-top: calc(20px - 20vw + 10px);
-  height:auto;
+  height: auto;
 }
 
-.image-inside-option2{
-  position:absolute;
-  display:block;
-  width:calc(15vw - 10px - 10px);
-  margin-left:calc(35px - 20vw + 10px);
-  height:auto;
+.image-inside-option2 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  height: auto;
 }
 
-.image-inside-option3{
-  position:absolute;
-  display:block;
-  width:calc(15vw - 10px - 10px);
-  margin-left:calc(35px - 20vw + 10px);
+.image-inside-option3 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
   margin-top: calc(20px - 12vw + 10px);
-  height:auto;
+  height: auto;
 }
 
 .image-wrapper:nth-child(1) .image-inside {
@@ -83,23 +84,33 @@ body {
   left: calc(20%); /* Adjust this value for the second image */
 }
 
-.footnote-inside{
-  position:absolute;
-  display:block;
-  width:calc(20vw - 30px);
-  margin-left:calc(60vw + 10px);
-  margin-top:-1.75rem;
-  height:auto;
+.footnote-inside {
+  position: absolute;
+  display: block;
+  width: calc(20vw - 30px);
+  margin-left: calc(60vw + 10px);
+  margin-top: -1.75rem;
+  height: auto;
   text-indent: 0;
 }
 
-.footnote-inside-option2{
-  position:absolute;
-  display:block;
-  width:calc(20vw - 30px);
-  margin-left:calc(60vw + 10px);
-  margin-top:3rem;
-  height:auto;
+.footnote-inside-option2 {
+  position: absolute;
+  display: block;
+  width: calc(20vw - 30px);
+  margin-left: calc(60vw + 10px);
+  margin-top: 4rem;
+  height: auto;
+  text-indent: 0;
+}
+
+.footnote-inside-option3 {
+  position: absolute;
+  display: block;
+  width: calc(20vw - 30px);
+  margin-left: calc(60vw + 10px);
+  margin-top: 1rem;
+  height: auto;
   text-indent: 0;
 }
 
@@ -107,7 +118,28 @@ body {
   grid-area: 2 / 2 / 3 / 5;
   z-index: 3;
   text-align: justify;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* .background-image:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0px);
+} */
 
 .right-side {
   grid-area: 2 / 5 / 3 / 7;
@@ -135,17 +167,8 @@ body {
   grid-area: 3 / 1 / 4 / 7;
 }
 
-.left-side,
-.right-side {
-  background-color: rgb(227, 239, 235);
-  /* mix-blend-mode: saturation; */
-}
 
-.left-side,
-.right-side img {
-  background-color: rgb(227, 239, 235);
-  /* mix-blend-mode: color-burn; */
-}
+
 
 /* moving image */
 
@@ -163,7 +186,7 @@ h1 {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: "MalaTestaCK";
   /* padding-bottom: 2rem; */
   padding-top: 2rem;
@@ -178,7 +201,7 @@ h1 {
   filter: blur(5px);
 } */
 
-.ephemeral-strikethrough {
+.title-strikethrough {
   position: absolute;
   top: 50%; /* Adjust to vertically center */
   left: 50%; /* Adjust to horizontally center */
@@ -192,25 +215,43 @@ h1 {
   object-fit: contain; /* Ensure the image isn't stretched */
 }
 
+.cartwheel-drawing {
+  display: none; /* Hide the image initially */
+    position: absolute; /* Adjust positioning as needed */
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 10%;
+    left: 10%;
+}
+
+.cartwheel-drawing-container{
+  position: relative;
+}
+
+.cartwheel-drawing-container:hover .cartwheel-drawing {
+  display: block; /* Show the image when container is hovered */
+
+}
+
 .title-container {
   position: relative;
 }
 
-.title-container:hover .ephemeral-strikethrough {
+.title-container:hover .title-strikethrough {
   opacity: 1;
   visibility: visible;
   filter: blur(5px); /* Apply blur on hover if desired */
   transition-delay: 0s;
 }
 
-.blur-on-hover {
-  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
-}
+/* .blur-on-hover {
+  transition: filter 0.3s ease;
+} */
 
 /* Hover state: blur specific words */
-.research-question-container:hover .blur-on-hover {
-  filter: blur(4px); /* Adjust the blur radius as needed */
-}
+/* .research-question-container:hover .blur-on-hover {
+  filter: blur(4px); 
+} */
 
 .hover-text-research-question {
   position: absolute;
@@ -223,44 +264,7 @@ h1 {
   font-family: inherit;
 }
 
-#chapter-1 {
-  scroll-margin-top: 2rem;
-}
 
-#chapter-2 {
-  scroll-margin-top: 2rem;
-}
-
-#chapter-3 {
-  scroll-margin-top: 2rem;
-}
-
-#chapter-1-hover {
-  top: 45%;
-  right: 23%; 
-  color: whitesmoke;
-  background-color: black;
-  font-family: "Comic Sans MS";
-
-  /* border-radius: 43% 57% 70% 30% / 55% 44% 56% 45%; */
-}
-
-#chapter-2-hover {
-  bottom: 4%;
-  right: 31%; /* Adjust as needed */
-  color: whitesmoke;
-  background-color: black;
-  font-family: "Comic Sans MS";
-}
-
-#chapter-3-hover {
-  top: 26%; /* Adjust as needed */
-  left: 20%; /* Adjust as needed */
-  transform: translateX(-50%);
-  color: whitesmoke;
-  background-color: black;
-  font-family: "Comic Sans MS";
-}
 
 .research-question-container:hover .hover-text-research-question {
   opacity: 1;
@@ -272,15 +276,14 @@ h1 {
   text-align: center;
   font-family: "Comic Sans MS";
   padding-top: 3rem;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
-/* .author-name:hover {
+.table-of-contents {
   text-align: center;
-  font-family: "MalaTestaCK";
-  padding-top: 5rem;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-} */
+  font-size: 1.5rem;
+}
 
 h2 {
   font-size: 2rem;
@@ -312,10 +315,12 @@ h2.research-question {
   position: relative;
 }
 
-
-
 #abstract {
   padding-top: 0rem;
+}
+
+#section-1{
+  background-image: url('assets/images/drawn-drawings/bigger-dots.png');
 }
 
 /* figure{
@@ -358,19 +363,6 @@ blockquote {
     position: absolute;
 } */
 
-.clouds {
-  display: block;
-  position: absolute;
-  mix-blend-mode: exclusion;
-  animation-play-state: paused;
-  animation: slide-left-and-back 300s forwards;
-}
-.clouds:hover {
-  display: none;
-  position: absolute;
-  mix-blend-mode: exclusion;
-  animation-play-state: running;
-}
 
 p {
   font-size: 1.4rem;
@@ -403,6 +395,13 @@ main > p {
 .sidenote-link {
   text-decoration: none;
   color: inherit;
+  filter: blur(4px);
+}
+
+.sidenote-link:hover {
+  text-decoration: none;
+  filter: blur(0px);
+  transition: transform 0.5s ease;
 }
 
 #im-maya-sleeptalk {
@@ -429,11 +428,39 @@ main > p {
   scroll-margin-top: 1.5rem;
 }
 
+#analyse-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
 #bunny-sleeptalk {
   scroll-margin-top: 1.5rem;
 }
 
-#zubazuba-sleeptalk{
+#nature-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#shrink-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#bomb-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#singing-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#omg-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#what-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
+
+#zubazuba-sleeptalk {
   scroll-margin-top: 1.5rem;
 }
 .image-wrapper {
@@ -455,17 +482,13 @@ main > p {
   mix-blend-mode: darken;
 }
 
-/* .opposite-scroll {
-  width: 90%; 
-  display: block; 
-  margin-bottom: 20px; 
-  margin-left: auto;
-  margin-right: auto;
-} */
+.bunny-image {
+  position: relative;
+}
 
 /* this is for smaller sizes */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   /* .grid-container {
     grid-template-columns: 1fr; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -480,7 +503,7 @@ main > p {
     height: 100vh;
   }
 
-  .image-inside{
+  .image-inside {
     position: relative;
     display: block;
     width: 100vw; /* You may consider using max-width for better control */
@@ -492,7 +515,7 @@ main > p {
     margin-bottom: 1rem; /* Add space on the bottom of the image */
   }
 
-  .image-inside-option2{
+  .image-inside-option2 {
     position: relative;
     display: block;
     width: 100vw; /* You may consider using max-width for better control */
@@ -503,7 +526,7 @@ main > p {
     margin-top: 1rem; /* Add space on the top of the image */
     margin-bottom: 1rem; /* Add space on the bottom of the image */
   }
-  
+
   .header {
     grid-area: 1 / 1 / 2 / 7;
   }
@@ -520,71 +543,74 @@ main > p {
     font-size: 2rem;
   }
 
-.left-side, .right-side {
+  .left-side,
+  .right-side {
     order: 2; /* Moves these items below the middle item */
-}
-.middle {
+  }
+  .middle {
     order: 1; /* Ensures this content is at the top */
-}
+  }
 
-.title {
-  order: 1;
-  font-size: 4rem;
-  padding-top: 0.2rem;
-}
+  .title {
+    order: 1;
+    font-size: 4rem;
+    padding-top: 0.2rem;
+  }
 
-.research-question {
-  order: 1;
-  font-size: 1.4rem;
-  font-family: "Comic Sans MS";
-}
+  .research-question {
+    order: 1;
+    font-size: 1.4rem;
+    font-family: "Comic Sans MS";
+  }
 
-.author-name {
-  order: 1;
-  font-size: 0.7rem;
-}
+  .author-name {
+    order: 1;
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 
-.section-titles {
-  font-weight: 300;
-  text-decoration-line: underline;
-  font-size: 2rem;
-}
+  .section-titles {
+    font-weight: 300;
+    text-decoration-line: underline;
+    font-size: 2rem;
+  }
 
-.left-side {
-  grid-area: 2 / 1 / 3 / 2;
-  z-index: 1;
-  isolation: isolate;
-  position: relative; /* Allows for absolute positioning within */
-}
+  .left-side {
+    grid-area: 2 / 1 / 3 / 2;
+    z-index: 1;
+    isolation: isolate;
+    position: relative; /* Allows for absolute positioning within */
+  }
 
-.middle {
-  grid-area: 2 / 2 / 3 / 5;
-  z-index: 3;
-  text-align: justify;
-}
+  .middle {
+    grid-area: 2 / 2 / 3 / 5;
+    z-index: 3;
+    text-align: justify;
+  }
 
-.right-side {
-  grid-area: 2 / 5 / 3 / 7;
-  height: 100%;
-  overflow: hidden;
-  z-index: 2; /* Lower than middle column */
-  /* mix-blend-mode: saturation; */
-  isolation: isolate;
-  position: relative;
-  text-align: center;
-}
+  .right-side {
+    grid-area: 2 / 5 / 3 / 7;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; /* Lower than middle column */
+    /* mix-blend-mode: saturation; */
+    isolation: isolate;
+    position: relative;
+    text-align: center;
+  }
 
-.h2{
-  padding-top: 1rem;
-}
+  .h2 {
+    padding-top: 1rem;
+  }
 
-.cucumber {
-  display: block;
-  position: absolute;
-  width: 10rem;
-  mix-blend-mode: hard-light;
-  z-index: 3;
-}
+  .cucumber {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    mix-blend-mode: hard-light;
+    z-index: 3;
+  }
 
   p {
     font-size: 1rem; /* Smaller font size for paragraphs */
@@ -628,7 +654,7 @@ main > p {
     height: auto;
   }
 
-  .footnote-inside-option2{
+  .footnote-inside-option2 {
     position: relative; /* Adjusted to maintain document flow */
     width: 70vw;
     margin-left: 0;
@@ -638,40 +664,3 @@ main > p {
   }
 }
 
-.billy-longclaws-image {
-  position: fixed;
-}
-
-.audio-button {
-  background-color: #090c10;
-  color: white;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  border-radius: 10rem;
-  font-family: "MalaTestaCK";
-  font-size: 1rem;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
-  filter: blur(5px);
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-  white-space: nowrap; /* Prevents the text from wrapping */
-  /* Ensure the button has enough width */
-  min-width: 5rem;
-}
-
-.audio-button:hover {
-  background-color: #090c10;
-  color: white;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  border-radius: 10rem;
-  font-family: "MalaTestaCK";
-  font-size: 1rem;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
-  filter: blur(0px);
-}
