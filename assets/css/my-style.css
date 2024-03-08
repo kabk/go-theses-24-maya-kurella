@@ -56,10 +56,9 @@ a {
   margin-top: 9vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
-
 }
 
 .caption-inside2 {
@@ -70,7 +69,7 @@ a {
   margin-top: 0.5vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -83,7 +82,7 @@ a {
   margin-top: 18vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -95,7 +94,7 @@ a {
   margin-top: -11vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -108,7 +107,7 @@ a {
   margin-top: 2vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -121,7 +120,7 @@ a {
   margin-top: 0.5vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -134,7 +133,7 @@ a {
   margin-top: -1.5vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -147,7 +146,7 @@ a {
   margin-top: -8.3vw;
   height: auto;
   text-align: left;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   font-style: oblique;
   color: antiquewhite;
 }
@@ -159,7 +158,6 @@ a {
   margin-left: calc(35px - 20vw + 10px);
   margin-top: calc(20px - 20vw + 10px);
   height: auto;
-  
 }
 
 .image-inside-option2 {
@@ -270,9 +268,9 @@ a {
   grid-area: 3 / 1 / 4 / 7;
 }
 
-.footer-p1{
+.footer-p1 {
   color: antiquewhite;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr; /* Creates four equal-width columns */
   gap: 2rem; /* Optional: Adjusts the gap between columns */
@@ -280,15 +278,15 @@ a {
   padding-right: 5rem;
 }
 
-.footer-p2{
+.footer-p2 {
   color: antiquewhite;
-  font-family: 'Eskapade';
+  font-family: "Eskapade";
   display: grid;
   grid-template-columns: 2.5fr 2fr; /* Creates four equal-width columns */
   gap: 2rem; /* Optional: Adjusts the gap between columns */
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top:-40rem;
+  margin-top: -40rem;
 }
 
 /* moving image */
@@ -308,10 +306,10 @@ h1 {
   color: antiquewhite;
 }
 
-.sleep-archive-text{
+.sleep-archive-text {
   color: white;
   text-align: center;
-  font-family: 'Comic Sans MS';
+  font-family: "Comic Sans MS";
   padding-top: 2rem;
   z-index: 5;
   background-color: brown;
@@ -323,7 +321,7 @@ h1 {
   left: 0;
   right: 0; /* Adjust these to control the dropdown width */
   background-color: #f9f9f9; /* Example background */
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Example shadow for popup effect */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Example shadow for popup effect */
   padding: 12px;
   z-index: 1; /* Ensure it's above other content */
 }
@@ -333,17 +331,15 @@ h1 {
   font-family: "MalaTestaCK";
   /* padding-bottom: 2rem; */
   padding-top: 1rem;
-
 }
 
-.toc{
+.sleep-time-container {
   color: white;
   text-align: center;
-  list-style: none;
-}
-
-li{
-  list-style: none;
+  padding-top: 2rem;
+  font-family: 'Comic Sans MS';
+  font-size: 0.8rem;
+line-height: 1.4rem;
 }
 
 /* .title:hover {
@@ -382,24 +378,7 @@ li{
   transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
   filter: blur(0px); /* Start without blur */
   object-fit: contain; /* Ensure the image isn't stretched */
-    z-index: -1;
-}
-
-.cartwheel-drawing {
-  display: none; /* Hide the image initially */
-  position: absolute; /* Adjust positioning as needed */
-  width: 100px; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  top: 10%;
-  left: 10%;
-}
-
-.cartwheel-drawing-container {
-  position: relative;
-}
-
-.cartwheel-drawing-container:hover .cartwheel-drawing {
-  display: block; /* Show the image when container is hovered */
+  z-index: -1;
 }
 
 .title-container {
@@ -663,7 +642,7 @@ main > p {
   position: relative;
 }
 
-.tools-title{
+.tools-title {
   padding-top: 0rem;
 }
 
@@ -674,6 +653,9 @@ main > p {
     grid-template-columns: 1fr; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   } */
+  body {
+    overflow-x: hidden;
+  }
 
   .parent {
     display: grid;
@@ -707,7 +689,7 @@ main > p {
     margin-top: 1rem; /* Add space on the top of the image */
     margin-bottom: 1rem; /* Add space on the bottom of the image */
   }
-  
+
   .caption-inside3 {
     position: relative;
     display: block;
@@ -950,5 +932,18 @@ main > p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: auto;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer-p1 {
+    color: antiquewhite;
+    font-family: "Eskapade";
+    display: block;
+    gap: 2rem; /* Optional: Adjusts the gap between columns */
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }

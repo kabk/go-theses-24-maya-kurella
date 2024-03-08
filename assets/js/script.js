@@ -197,13 +197,4 @@ $(document).ready(function () {
       audio.play()
   })
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('toggleButton');
-    const dropdownContent = document.getElementById('dropdownContent');
-  
-    toggleButton.addEventListener('click', function() {
-      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-  
 })
