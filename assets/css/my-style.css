@@ -7,10 +7,8 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  /* height:100% */
-  background-color: rgb(227, 239, 235);
-  /* margin: 20%; */
-  /* cursor: url('assets/images/drawn-drawings/cursor.png'), auto; */
+  background-color: rgb(9, 7, 39);
+  overflow-x: hidden;
 }
 
 /* main {
@@ -27,7 +25,7 @@ body {
   height: 100vh;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -50,6 +48,110 @@ a{
   position: relative; /* Allows for absolute positioning within */
 }
 
+.caption-inside {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: 9vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+
+}
+
+.caption-inside2 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: 0.5vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.caption-inside3 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: 18vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+.caption-inside4 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: -11vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.caption-inside5 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: 2vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.caption-inside6 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: 0.5vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.caption-inside7 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: -1.5vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.caption-inside8 {
+  position: absolute;
+  display: block;
+  width: calc(15vw - 10px - 10px);
+  margin-left: calc(35px - 20vw + 10px);
+  margin-top: -8.3vw;
+  height: auto;
+  text-align: left;
+  font-family: 'Eskapade';
+  font-style: oblique;
+  color: antiquewhite;
+}
+
 .image-inside {
   position: absolute;
   display: block;
@@ -57,6 +159,7 @@ a{
   margin-left: calc(35px - 20vw + 10px);
   margin-top: calc(20px - 20vw + 10px);
   height: auto;
+  
 }
 
 .image-inside-option2 {
@@ -167,29 +270,80 @@ a{
   grid-area: 3 / 1 / 4 / 7;
 }
 
+.footer-p1{
+  color: antiquewhite;
+  font-family: 'Eskapade';
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr; /* Creates four equal-width columns */
+  gap: 2rem; /* Optional: Adjusts the gap between columns */
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
-
+.footer-p2{
+  color: antiquewhite;
+  font-family: 'Eskapade';
+  display: grid;
+  grid-template-columns: 2.5fr 2fr; /* Creates four equal-width columns */
+  gap: 2rem; /* Optional: Adjusts the gap between columns */
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top:-40rem;
+}
 
 /* moving image */
 
 .cucumber {
   display: block;
   position: absolute;
-  width: 40rem;
+  width: 20rem;
   mix-blend-mode: hard-light;
   z-index: 3;
+  overflow: hidden;
 }
 
 h1 {
   font-size: 2rem;
   text-align: center;
+  color: antiquewhite;
+}
+
+.sleep-archive-text{
+  color: white;
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  padding-top: 2rem;
+  z-index: 5;
+  background-color: brown;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: 0;
+  right: 0; /* Adjust these to control the dropdown width */
+  background-color: #f9f9f9; /* Example background */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Example shadow for popup effect */
+  padding: 12px;
+  z-index: 1; /* Ensure it's above other content */
 }
 
 .title {
   font-size: 7rem;
   font-family: "MalaTestaCK";
   /* padding-bottom: 2rem; */
-  padding-top: 2rem;
+  padding-top: 1rem;
+
+}
+
+.toc{
+  color: white;
+  text-align: center;
+  list-style: none;
+}
+
+li{
+  list-style: none;
 }
 
 /* .title:hover {
@@ -203,34 +357,49 @@ h1 {
 
 .title-strikethrough {
   position: absolute;
-  top: 50%; /* Adjust to vertically center */
-  left: 50%; /* Adjust to horizontally center */
+  top: 20%; /* Adjust to vertically center */
+  left: 10%; /* Adjust to horizontally center */
   transform: translate(-50%, -50%); /* Center the image */
-  max-width: 100%; /* Control the size of the image, adjust as needed */
-  max-height: 100%; /* Control the size of the image, adjust as needed */
+  max-width: 300%; /* Control the size of the image, adjust as needed */
+  max-height: 300%; /* Control the size of the image, adjust as needed */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
   filter: blur(0px); /* Start without blur */
   object-fit: contain; /* Ensure the image isn't stretched */
+  z-index: -1;
+}
+
+.title-strikethrough2 {
+  position: absolute;
+  top: 50%; /* Adjust to vertically center */
+  left: 90%; /* Adjust to horizontally center */
+  transform: translate(-50%, -50%); /* Center the image */
+  max-width: 500%; /* Control the size of the image, adjust as needed */
+  max-height: 500%; /* Control the size of the image, adjust as needed */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
+  filter: blur(0px); /* Start without blur */
+  object-fit: contain; /* Ensure the image isn't stretched */
+    z-index: -1;
 }
 
 .cartwheel-drawing {
   display: none; /* Hide the image initially */
-    position: absolute; /* Adjust positioning as needed */
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    top: 10%;
-    left: 10%;
+  position: absolute; /* Adjust positioning as needed */
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  top: 10%;
+  left: 10%;
 }
 
-.cartwheel-drawing-container{
+.cartwheel-drawing-container {
   position: relative;
 }
 
 .cartwheel-drawing-container:hover .cartwheel-drawing {
   display: block; /* Show the image when container is hovered */
-
 }
 
 .title-container {
@@ -238,6 +407,13 @@ h1 {
 }
 
 .title-container:hover .title-strikethrough {
+  opacity: 1;
+  visibility: visible;
+  filter: blur(5px); /* Apply blur on hover if desired */
+  transition-delay: 0s;
+}
+
+.title-container:hover .title-strikethrough2 {
   opacity: 1;
   visibility: visible;
   filter: blur(5px); /* Apply blur on hover if desired */
@@ -264,8 +440,6 @@ h1 {
   font-family: inherit;
 }
 
-
-
 .research-question-container:hover .hover-text-research-question {
   opacity: 1;
   visibility: visible;
@@ -278,6 +452,7 @@ h1 {
   padding-top: 3rem;
   font-weight: 500;
   font-size: 1.5rem;
+  color: antiquewhite;
 }
 
 .table-of-contents {
@@ -292,12 +467,14 @@ h2 {
   font-style: italic;
   text-decoration: underline;
   padding-top: 5rem;
+  color: antiquewhite;
 }
 
 h2.research-question {
   margin: 0 20%;
   text-align: center;
   padding-top: 0rem;
+  padding-bottom: 2rem;
   font-family: "eskapade", serif;
   font-weight: 400;
   font-style: italic;
@@ -319,8 +496,8 @@ h2.research-question {
   padding-top: 0rem;
 }
 
-#section-1{
-  background-image: url('assets/images/drawn-drawings/bigger-dots.png');
+#section-1 {
+  background-image: url("assets/images/drawn-drawings/bigger-dots.png");
 }
 
 /* figure{
@@ -363,13 +540,13 @@ blockquote {
     position: absolute;
 } */
 
-
 p {
   font-size: 1.4rem;
   font-family: "eskapade", serif;
   font-weight: 400;
   font-style: normal;
   /* z-index: 0; */
+  color: antiquewhite;
 }
 
 /* Apply text indent only to the first paragraph of each section */
@@ -486,6 +663,10 @@ main > p {
   position: relative;
 }
 
+.tools-title{
+  padding-top: 0rem;
+}
+
 /* this is for smaller sizes */
 
 @media (max-width: 800px) {
@@ -503,10 +684,105 @@ main > p {
     height: 100vh;
   }
 
+  .caption-inside {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .caption-inside2 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+  
+  .caption-inside3 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+  .caption-inside4 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .caption-inside5 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .caption-inside6 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .caption-inside7 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .caption-inside8 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
   .image-inside {
     position: relative;
     display: block;
-    width: 100vw; /* You may consider using max-width for better control */
+    width: 30vw; /* You may consider using max-width for better control */
     max-width: 70vw; /* Example max-width, adjust as needed */
     height: auto;
     margin-left: auto; /* Center align the images */
@@ -518,7 +794,19 @@ main > p {
   .image-inside-option2 {
     position: relative;
     display: block;
-    width: 100vw; /* You may consider using max-width for better control */
+    width: 30vw; /* You may consider using max-width for better control */
+    max-width: 70vw; /* Example max-width, adjust as needed */
+    height: auto;
+    margin-left: auto; /* Center align the images */
+    margin-right: auto; /* Center align the images */
+    margin-top: 1rem; /* Add space on the top of the image */
+    margin-bottom: 1rem; /* Add space on the bottom of the image */
+  }
+
+  .image-inside-option3 {
+    position: relative;
+    display: block;
+    width: 30vw; /* You may consider using max-width for better control */
     max-width: 70vw; /* Example max-width, adjust as needed */
     height: auto;
     margin-left: auto; /* Center align the images */
@@ -568,6 +856,7 @@ main > p {
     font-size: 0.7rem;
     font-weight: 500;
     font-size: 1.5rem;
+    color: antiquewhite;
   }
 
   .section-titles {
@@ -663,4 +952,3 @@ main > p {
     height: auto;
   }
 }
-
