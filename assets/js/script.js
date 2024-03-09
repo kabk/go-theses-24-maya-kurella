@@ -35,34 +35,34 @@ $(document).ready(function () {
     // })
 
     // Cucumber movement on scroll
-    document.addEventListener('scroll', function () {
-        const cucumbers = document.querySelectorAll('.cucumber')
-        const windowHeight = window.innerHeight
+    // document.addEventListener('scroll', function () {
+    //     const cucumbers = document.querySelectorAll('.cucumber')
+    //     const windowHeight = window.innerHeight
 
-        cucumbers.forEach((cucumber) => {
-            const cucumberRect = cucumber.getBoundingClientRect()
-            const cucumberTop = cucumberRect.top
-            const cucumberHeight = cucumberRect.height
-            const startOffset = 200 // Adjust this value to change when the movement starts
+    //     cucumbers.forEach((cucumber) => {
+    //         const cucumberRect = cucumber.getBoundingClientRect()
+    //         const cucumberTop = cucumberRect.top
+    //         const cucumberHeight = cucumberRect.height
+    //         const startOffset = 200 // Adjust this value to change when the movement starts
 
-            if (
-                cucumberTop + cucumberHeight > 0 &&
-                cucumberTop < windowHeight
-            ) {
-                let movement = Math.max(
-                    0,
-                    ((windowHeight - (cucumberTop + startOffset)) /
-                        windowHeight) *
-                        1000
-                )
-                movement = Math.min(movement, 1000) // Ensures movement stays within the range
+    //         if (
+    //             cucumberTop + cucumberHeight > 0 &&
+    //             cucumberTop < windowHeight
+    //         ) {
+    //             let movement = Math.max(
+    //                 0,
+    //                 ((windowHeight - (cucumberTop + startOffset)) /
+    //                     windowHeight) *
+    //                     1000
+    //             )
+    //             movement = Math.min(movement, 1000) // Ensures movement stays within the range
 
-                cucumber.style.transform = `translateX(${movement}px)`
-            } else {
-                cucumber.style.transform = ''
-            }
-        })
-    })
+    //             cucumber.style.transform = `translateX(${movement}px)`
+    //         } else {
+    //             cucumber.style.transform = ''
+    //         }
+    //     })
+    // })
     document.addEventListener('DOMContentLoaded', function () {
         var playText = document.getElementById('playAudioText')
         var audioPlayer = document.getElementById('audioPlayer')
