@@ -41,8 +41,11 @@
 
   <body>
     <!-- <div class="page-wrapper"> -->
+      <div class="gradient-overlay"></div>
+      <div class="gradient-overlay-bottom"></div>
     <div class="parent">
       <div class="header">
+        <button class="sidebar-toggle" id="sidebarToggle">Sleep Talk Archive</button>
         <!-- <img class="bunny-image-contents"src="assets/images/footnote-drawings/bunny.png" alt="Bunny Drawing"> -->
         <div class="title-container">
           <h1 class="title">Narratives of the Night <br /></h1>
@@ -74,23 +77,23 @@
             >visual language through drawing?
           </h2>
         </div>
-        <div class="sleep-time-container">
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">23:55</span> <br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">00:25</span> <br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">00:43</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">01:32</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">01:46</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">01:46</span> <br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">02:10</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">02:38</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">03:26</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">03:37</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">03:42</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">04:31</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">04:52</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">05:23</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">05:54</span><br />
-          <span class="span-times"style="background-color: rgb(255, 255, 255)">07:25</span><br />
+        <div class="sleep-time-container" id="mySidebar">
+          <a href="#bomb-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)" >23:55</span></a>
+          <a href="#what-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">00:25</span></a>
+          <a href="#omg-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">00:43</span></a>
+          <a href="#billy-longclaws-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">01:32</span></a>
+          <a href="#shrink-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">01:46</span></a>
+          <a href="#im-maya-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">01:46</span> </a>
+          <a href="#thoughts-and-feelings-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">02:10</span></a>
+          <a href="#singing-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">02:38</span></a>
+          <a href="#bunny-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">03:26</span></a>
+          <a href="#zubazuba-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">03:37</span></a>
+          <a href="#nonsense-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">03:42</span></a>
+          <a href="#envelopes-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">04:31</span></a>
+          <a href="#inside-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">04:52</span></a>
+          <a href="#beautiful-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">05:23</span></a>
+          <a href="#analyse-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">05:54</span></a>
+          <a href="#nature-sleeptalk" class="span-link"><span class="span-times"style="background-color: rgb(255, 255, 255)">07:25</span></a>
         </div>
         <!-- <h3 class="author-name">
           KABK Graphic Design Bachelor Thesis 2024 by Maya Kurella
@@ -109,11 +112,6 @@
       </div>
 
       <div class="left-side">
-        <img
-          src="assets/images/drawn-drawings/squiggle.png"
-          alt="Lines and dots"
-          class="background-image"
-        />
       </div>
       <div class="middle">
         <section id="section-1" class="section">
@@ -1200,6 +1198,13 @@
             will be impossible not to understand.
           </p>
         </section>
+
+          <h2 class="section-titles" id="acknowledgements">Acknowledgements</h2>
+          <p>
+            Thank you to...
+          </p>
+
+
       </div>
       <div class="right-side">
         <!-- <p id="envelopes-sleeptalk" class="right-side-text">
