@@ -1028,7 +1028,8 @@ main > p {
   } */
 
   p {
-    font-size: 0.8rem; /* Smaller font size for paragraphs */
+    font-size: 1.1rem; /* Smaller font size for paragraphs */
+    text-align: left;
   }
 
   h1 {
@@ -1080,6 +1081,7 @@ main > p {
 
   .footer {
     display: block;
+    padding-top: 0rem;
   }
 
   .footer-p1 {
@@ -1089,7 +1091,7 @@ main > p {
     gap: 2rem; /* Optional: Adjusts the gap between columns */
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 8rem;
     font-size: 0.6rem;
   }
 
@@ -1118,6 +1120,7 @@ transform: scale(1,1);
     overflow-y: auto;
     z-index: 1000; /* Ensure it's above other content */
     background-color: rgba(42, 41, 54, 0);
+    padding-top: 0rem;
   }
 
   #im-maya-sleeptalk {
