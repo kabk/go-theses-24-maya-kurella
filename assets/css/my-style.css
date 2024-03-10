@@ -12,7 +12,7 @@ body {
 
 html, body{
   max-width: 100vw;
-  overflow-x: hidden;
+
 }
 
 /* main {
@@ -270,17 +270,22 @@ a {
 
 .footer {
   grid-area: 3 / 1 / 4 / 7;
+  padding-top: 10rem;
 }
 
 .footer-p1 {
-  background-color: rgb(0, 0, 0);
   color: antiquewhite;
   font-family: "Eskapade";
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr; /* Creates four equal-width columns */
+  grid-template-columns: 1fr 1fr 1fr ; /* Creates four equal-width columns */
   gap: 2rem; /* Optional: Adjusts the gap between columns */
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding-bottom: 2rem;
+  position: relative;
 }
 
 .footer-p2 {
@@ -292,6 +297,28 @@ a {
   padding-left: 5rem;
   padding-right: 5rem;
   margin-top: -40rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.footer-drawing {
+    position: absolute;
+    top: -40%; 
+    left: 40%; 
+    z-index: 1; 
+    opacity: 1; 
+    width: 100%; 
+    height: auto;
+    filter: blur(5px);
+    overflow: hidden;
+    width: 50vw; 
+    max-width: 100%;
+    height: auto;
+transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
+filter: blur(5px); 
+object-fit: contain; 
+transform: scale(0.5,.0.5);
 }
 
 /* moving image */
@@ -397,20 +424,7 @@ opacity:0.5;
   box-sizing: border-box;
 }
 
-.sidebar-toggle {
-  display: none;
-  position: fixed; /* So it doesn't scroll with the page */
-  top: 4rem; /* Distance from the top of the viewport */
-  left:50%;
-  transform: translate(-50%, -50%);
-  z-index: 100; /* Ensure it's above other content */
-  padding: 1rem;
-  background-color: #007bff; /* Example background color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-}
+
 
 /* .title:hover {
   font-size: 5rem;
@@ -423,31 +437,33 @@ opacity:0.5;
 
 .title-strikethrough {
   position: absolute;
-  top: 20%; /* Adjust to vertically center */
-  left: 10%; /* Adjust to horizontally center */
-  transform: translate(-50%, -50%); /* Center the image */
-  max-width: 300%; /* Control the size of the image, adjust as needed */
-  max-height: 300%; /* Control the size of the image, adjust as needed */
+  top: 20%; 
+  left: 10%;
+  transform: translate(-50%, -50%); 
+  width: 100vw; 
+  max-width: 50%;
+  height: auto;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
-  filter: blur(0px); /* Start without blur */
-  object-fit: contain; /* Ensure the image isn't stretched */
+  filter: blur(0px); 
+  object-fit: contain; 
   z-index: -1;
 }
 
 .title-strikethrough2 {
   position: absolute;
-  top: 50%; /* Adjust to vertically center */
-  left: 90%; /* Adjust to horizontally center */
-  transform: translate(-50%, -50%); /* Center the image */
-  max-width: 500%; /* Control the size of the image, adjust as needed */
-  max-height: 500%; /* Control the size of the image, adjust as needed */
+  top: -60%; /* Adjust to vertically center */
+  left: 65%; /* Adjust to horizontally center */
+  transform: translate(-50%, -50%); 
+  width: 100vw; 
+  max-width: 50%;
+  height: auto;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s, filter 0.3s ease;
-  filter: blur(0px); /* Start without blur */
-  object-fit: contain; /* Ensure the image isn't stretched */
+  filter: blur(0px); 
+  object-fit: contain; 
   z-index: -1;
 }
 
@@ -458,14 +474,14 @@ opacity:0.5;
 .title-container:hover .title-strikethrough {
   opacity: 1;
   visibility: visible;
-  filter: blur(5px); /* Apply blur on hover if desired */
+  filter: blur(5px); 
   transition-delay: 0s;
 }
 
 .title-container:hover .title-strikethrough2 {
   opacity: 1;
   visibility: visible;
-  filter: blur(5px); /* Apply blur on hover if desired */
+  filter: blur(5px);
   transition-delay: 0s;
 }
 
@@ -532,6 +548,13 @@ h2.research-question {
   font-size: 2.5rem;
 }
 
+h2.biblio-titles {
+  padding-top: 0rem;
+  font-family: 'Comic Sans MS';
+  font-size: 1rem;
+  font-style: normal;
+}
+
 .section-titles {
   font-weight: 300;
   text-decoration-line: underline;
@@ -546,9 +569,6 @@ h2.research-question {
   padding-top: 5rem;
 }
 
-#section-1 {
-  background-image: url("assets/images/drawn-drawings/bigger-dots.png");
-}
 
 #acknowledgements {
   text-align: right;
@@ -728,6 +748,9 @@ main > p {
     grid-template-columns: 1fr; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   } */
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     overflow-x: hidden;
   }
@@ -761,7 +784,7 @@ main > p {
     grid-column-gap: 10px;
     grid-row-gap: 7px;
     height: 100vh;
-    margin-left: 6rem;
+    margin-left: 5rem;
   }
 
   .caption-inside {
@@ -929,25 +952,34 @@ main > p {
     padding-top: 1rem;
     margin-right: 2rem;
   }
-/* 
+
   .title-container .title-strikethrough {
     opacity: 1;
     visibility: visible;
-    filter: blur(3px);
+    filter: blur(1.7px);
     transition: none;
-    top: 60%;
-  } */
+    top: 80%;
+    left:60%;
+    transform: translate(-4rem,9rem)
+    scale(1.2,1.2);
+    width: 100vw; 
+  height: auto;
+  }
 
   .title-container .title-strikethrough2 {
     opacity: 1;
     visibility: visible;
-    filter: blur(3px); /* Adjust if you want the blur effect on small screens */
-    transition: none; /* Optional: remove transition effect on small screens */
+    filter: blur(1.7px); /* Adjust if you want the blur effect on small screens */
+    transition: none;
+    opacity: 1;
+    top: 10%;
+    left:-20%;
+    overflow: hidden;
+    transform: scale(1.1,1.1);
+    width: 100vw; 
+  height: auto;
   }
 
-  .title-strikethrough2{
-    transform: translate(0px, 43px);
-  }
 
   .section-titles {
     font-weight: 300;
@@ -1055,27 +1087,98 @@ main > p {
     font-family: "Eskapade";
     display: block;
     gap: 2rem; /* Optional: Adjusts the gap between columns */
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .sleep-time-container {
-    display: flex; /* Use Flexbox */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center;
-    position: fixed;
-    top: 0; /* Align to the top of the viewport */
-    left: 0; /* Align to the left side of the viewport */
-    width: 6rem; /* Or whatever width you prefer */
-    height: 100%; /* Make it full height */
-    overflow-y: auto; /* Enable scrolling within the container if content overflows */
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: rgba(42, 41, 54, 0); /* Light grey background, you can customize it */
-    line-height: 0.7rem;
-    padding-top: 3rem;
-    box-sizing: border-box; 
-    z-index: 4;
+    padding-bottom: 2rem;
+    font-size: 0.6rem;
   }
+
+  .footer-drawing {
+    position: absolute;
+    top: -10%; 
+    left: 40%; 
+    z-index: 1; 
+    opacity: 1; 
+    width: 100%; 
+    height: auto;
+    filter: blur(2px);
+    overflow: hidden;
+    width: 50vw; 
+    max-width: 100%;
+    height: auto;
+object-fit: contain; 
+transform: scale(1,1);
 }
+
+  .sleep-time-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(42, 41, 54, 0);
+  }
+
+  #im-maya-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #nonsense-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #envelopes-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #thoughts-and-feelings-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #billy-longclaws-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #beautiful-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #analyse-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #bunny-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #nature-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #shrink-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #bomb-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #singing-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #omg-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #what-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+  
+  #zubazuba-sleeptalk {
+    scroll-margin-top: 1.5rem;
+  }
+
+}
+
