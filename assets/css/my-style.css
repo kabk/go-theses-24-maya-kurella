@@ -989,6 +989,7 @@ main > p {
     font-size: 4rem;
     padding-top: 1rem;
     margin-right: 2rem;
+    margin-left: -2rem;
   }
 
   .title-container .title-strikethrough {
