@@ -273,6 +273,18 @@ a {
   padding-top: 10rem;
 }
 
+.further-reading-listening p, .further-seeing p, .experiences p{
+  font-size: 1rem;
+  font-style: oblique;
+  text-indent: -2rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you {
+  font-size:1rem;
+}
+
 .footer-p1 {
   color: antiquewhite;
   font-family: "Eskapade";
@@ -382,6 +394,7 @@ font-family: 'Comic Sans MS';
 cursor: pointer;
 text-align: center;
 opacity:0.5;
+width: 3rem;
 
 }
 
@@ -393,6 +406,7 @@ opacity:0.5;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
   text-align: center;
   opacity:1;
+  width: 3rem;
   }
 
 .sleep-time-container {
@@ -410,6 +424,8 @@ opacity:0.5;
   line-height: 0.5rem;
   box-sizing: border-box; 
   z-index: 4;
+  padding-left:1rem;
+  text-align: center;
 }
 
 
@@ -417,21 +433,20 @@ opacity:0.5;
 .sleep-time-container span {
   margin-bottom: 0.8rem; /* Add some space between each span */
   color: rgb(0, 0, 0); /* Change text color to white for better contrast */
-  padding: 0.6rem; /* Add some padding around the text */
+  padding-top: 0.6rem; /* Add some padding around the text */
   text-align: center;
-  box-sizing: border-box;
+padding-bottom: 0.6rem;
 }
 
 .sidebar-title{
-  padding-bottom: 3rem;
-  padding-left: -1.2rem;
-padding-right: -0rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.2rem;
   color: white;
   font-family: 'Comic Sans MS';
-  font-size: 0.8rem;
-  line-height: 0.8rem;
+  font-size: 0.7rem;
   z-index: -1;
-  transform: rotate(270deg) translate(2rem);
+  transform: rotate(270deg) translate(-60%,-2rem);
+  white-space: nowrap;
 }
 
 
