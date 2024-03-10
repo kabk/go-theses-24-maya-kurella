@@ -7,13 +7,13 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  background-color: rgb(9, 7, 39);
+  background-color: rgba(9, 7, 39);
 }
 
 html, body{
   max-width: 100vw;
-
 }
+
 
 /* main {
   margin: 3rem 10rem;
@@ -406,11 +406,8 @@ opacity:0.5;
   width: 6rem; /* Or whatever width you prefer */
   height: 100%; /* Make it full height */
   overflow-y: auto; /* Enable scrolling within the container if content overflows */
-  padding-left: 1rem;
-  padding-right: 1rem;
   background-color: rgba(42, 41, 54, 0); /* Light grey background, you can customize it */
   line-height: 0.5rem;
-  padding-top: 0.5rem;
   box-sizing: border-box; 
   z-index: 4;
 }
@@ -425,6 +422,17 @@ opacity:0.5;
   box-sizing: border-box;
 }
 
+.sidebar-title{
+  padding-bottom: 3rem;
+  padding-left: -1.2rem;
+padding-right: -0rem;
+  color: white;
+  font-family: 'Comic Sans MS';
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  z-index: -1;
+  transform: rotate(270deg) translate(2rem);
+}
 
 
 /* .title:hover {
@@ -668,6 +676,9 @@ main > p {
 #envelopes-sleeptalk {
   scroll-margin-top: 1.5rem;
 }
+#inside-sleeptalk {
+  scroll-margin-top: 1.5rem;
+}
 
 #thoughts-and-feelings-sleeptalk {
   scroll-margin-top: 1.5rem;
@@ -754,7 +765,7 @@ main > p {
 
 /* this is for smaller sizes */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   /* .grid-container {
     grid-template-columns: 1fr; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -903,7 +914,7 @@ main > p {
     margin-right: auto; /* Center align the images */
     margin-top: 1rem; /* Add space on the top of the image */
     margin-bottom: 1rem; /* Add space on the bottom of the image */
-
+    z-index: 3;
   }
 
   .image-inside-option2 {
@@ -1136,63 +1147,67 @@ animation: blur-unblur-animation 5s infinite;
   }
 
   #im-maya-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 30vh;
   }
   
   #nonsense-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 50vh;
   }
   
   #envelopes-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 60vh;
+  }
+
+  #inside-sleeptalk {
+    scroll-margin-top: 60vh;
   }
   
   #thoughts-and-feelings-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 40vh;
   }
   
   #billy-longclaws-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 20vh;
   }
   
   #beautiful-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 70vh;
   }
   
   #analyse-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 70vh;
   }
   
   #bunny-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 50vh;
   }
   
   #nature-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 70vh;
   }
   
   #shrink-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 30vh;
   }
   
   #bomb-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 20vh;
   }
   
   #singing-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 40vh;
   }
   
   #omg-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 20vh;
   }
   
   #what-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 20vh;
   }
   
   #zubazuba-sleeptalk {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 50vh;
   }
 
 }
