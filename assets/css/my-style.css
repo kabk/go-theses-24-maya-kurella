@@ -1166,6 +1166,17 @@ animation: blur-unblur-animation 5s infinite;
     padding-top: 0rem;
   }
 
+  .span-times {
+    filter: blur(10px);
+    font-family: 'Comic Sans MS';
+    cursor: pointer;
+    text-align: center;
+    opacity:0.5;
+    width: 4rem;
+    font-size:0.4rem;
+
+    }
+
   #im-maya-sleeptalk {
     scroll-margin-top: 30vh;
   }
