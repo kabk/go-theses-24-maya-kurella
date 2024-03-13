@@ -1059,6 +1059,7 @@ main > p {
     isolation: isolate;
     position: relative;
     text-align: center;
+    display: none;
   }
 
   .h2 {
@@ -1191,6 +1192,7 @@ animation: blur-unblur-animation 5s infinite;
       z-index: -1;
       transform: rotate(0deg) translate(-40%,1rem);
       white-space: wrap;
+      line-break: break-all;
       text-align: left;
       line-height: 0.8rem;
     }
