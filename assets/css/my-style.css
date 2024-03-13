@@ -442,7 +442,7 @@ padding-bottom: 0.6rem;
 }
 
 .sidebar-title{
-  padding-bottom: 3rem;
+  padding-bottom: 2.4rem;
   padding-left: 15rem;
   color: white;
   font-family: 'Comic Sans MS';
@@ -1048,7 +1048,6 @@ main > p {
     width: 100%;
     box-sizing: border-box;
     width: 100%;
-    padding-left: 1rem;
   }
 
   .right-side {
@@ -1165,6 +1164,7 @@ animation: blur-unblur-animation 5s infinite;
     top: 0;
     left: 0;
     height: 100vh;
+    width: 25vw;
     overflow-y: auto;
     z-index: 1000; /* Ensure it's above other content */
     background-color: rgba(42, 41, 54, 0);
@@ -1180,6 +1180,19 @@ animation: blur-unblur-animation 5s infinite;
     width: 4rem;
     font-size:0.6rem;
 
+    }
+
+    .sidebar-title {
+      padding-bottom: 2.4rem;
+      padding-left: 15rem;
+      color: white;
+      font-family: 'Comic Sans MS';
+      font-size: 0.7rem;
+      z-index: -1;
+      transform: rotate(0deg) translate(-40%,1rem);
+      white-space: wrap;
+      text-align: left;
+      line-height: 0.8rem;
     }
 
   #im-maya-sleeptalk {
