@@ -1184,17 +1184,21 @@ animation: blur-unblur-animation 5s infinite;
     }
 
     .sidebar-title {
-      padding-bottom: 2.4rem;
-      padding-left: 15rem;
+      padding-bottom: 2rem;
+      padding-left: 0rem;
       width:20vw;
       color: white;
       font-family: 'Comic Sans MS';
       font-size: 0.7rem;
       z-index: -1;
-      transform: rotate(0deg) translate(-40%,1rem);
+      transform: rotate(0deg) translate(-30%,1rem);
       overflow-wrap: break-word;
-      text-align: left;
+      text-align: center;
       line-height: 0.8rem;
+    }
+
+    .audio-word{
+      opacity: 0;
     }
 
   #im-maya-sleeptalk {
