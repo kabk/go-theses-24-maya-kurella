@@ -435,7 +435,6 @@ font-size:0.7rem;
 
 .sleep-time-container span {
   margin-bottom: 0.8rem; /* Add some space between each span */
-  color: rgb(0, 0, 0); /* Change text color to white for better contrast */
   padding-top: 0.6rem; /* Add some padding around the text */
   text-align: center;
 padding-bottom: 0.6rem;
@@ -450,6 +449,11 @@ padding-bottom: 0.6rem;
   z-index: -1;
   transform: rotate(270deg) translate(-60%,-2rem);
   white-space: nowrap;
+}
+
+.audio-word{
+  opacity: 1;
+  color: white;
 }
 
 
