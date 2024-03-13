@@ -790,7 +790,7 @@ main > p {
   } */
   html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+
   }
   body {
     overflow-x: hidden;
@@ -1044,6 +1044,10 @@ main > p {
     grid-area: 2 / 2 / 3 / 5;
     z-index: 3;
     text-align: justify;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
     padding-left: 1rem;
   }
 
