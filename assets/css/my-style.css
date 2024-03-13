@@ -790,6 +790,7 @@ main > p {
   } */
   html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
     overflow-x: hidden;
@@ -1173,7 +1174,7 @@ animation: blur-unblur-animation 5s infinite;
     text-align: center;
     opacity:0.5;
     width: 4rem;
-    font-size:0.4rem;
+    font-size:0.6rem;
 
     }
 
